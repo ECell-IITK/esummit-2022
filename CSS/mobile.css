@@ -31,9 +31,49 @@
     top: 28px;
 }
 
+.para {
+    font-size: medium;
+    color: rgb(222, 221, 221);
+}
+
+.home-btn {
+    width: 80vw;
+    margin: 10px 0;
+}
+
+.home-main img {
+    width: 70%;
+}
+
 .comp-row {
     flex-direction: column;
-    margin: 40px 30px;
+    padding: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.comp-info {
+    font-size: medium;
+}
+
+.ws-desc p {
+    font-size: medium;
+}
+
+.ws-heading {
+    padding: 20px 10px !important;
+}
+
+.sp-heading img {
+    width: 90%;
+}
+
+.hackathons {
+    flex-direction: column;
+}
+
+.comp {
+    flex-direction: column;
 }
 
 .comp-card {
@@ -67,10 +107,14 @@
 }
 
 .abo-card {
-    width: 20%;
-    height: max-content;
-    padding: 10px;
+    width: 20vw;
+    height: 20vw;
+    padding: 20px;
     font-size: medium !important;
+}
+
+.eve-heading h1 {
+    font-size: x-large;
 }
 
 .abo-card span,
@@ -78,12 +122,42 @@
     font-size: large;
 }
 
+.ws-card h3 {
+    font-size: large !important;
+}
+
 .burger {
     display: inline;
 }
 
+#speakers {
+    padding-top: 0;
+}
+
 .navlist {
     display: none;
+}
+
+.contact p {
+    font-size: medium;
+}
+
+.contact {
+    padding: 50px 20px;
+}
+
+.sp-desc p {
+    font-size: medium;
+}
+
+.big-gear {
+    right: 23vw;
+    bottom: 6vw;
+}
+
+.small-gear {
+    right: 28vw;
+    bottom: 0vw;
 }
 
 .mobile-list {
@@ -104,7 +178,7 @@
 
 .active {
     display: block;
-    
+
 }
 
 .mobile-list ul {

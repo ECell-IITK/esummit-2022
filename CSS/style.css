@@ -13,6 +13,7 @@ html {
 
 body {
   transition: 0.5s ease;
+  background-color: #3E3535;
 }
 
 a {
@@ -32,7 +33,7 @@ li {
 }
 
 .card {
-  background: radial-gradient(100% 100% at 28.98% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: #B49791;
   box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 20%);
   backdrop-filter: blur(20px);
   border-radius: 30px;
@@ -46,10 +47,16 @@ li {
 
 #Events {
   color: white;
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
-  background: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#home .video-bg {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .video-bg {
@@ -64,10 +71,23 @@ li {
   z-index: -1;
 }
 
-.eve-info h1 {
+.eve-heading {
+  text-align: center;
+  background: rgba(180, 151, 145, 0.13);
+  border-radius: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.eve-heading h1 {
   text-align: center;
   margin: 30px 10px;
   font-size: 2.5rem;
+}
+
+.eve-heading h2 {
+  color: #B49791;
+
 }
 
 .eve-info p {
@@ -75,6 +95,7 @@ li {
   font-size: 20px;
   text-align: center;
   margin: 10px 6%;
+  color: #B49791;
 }
 
 .Eventcard {
@@ -100,6 +121,7 @@ li {
   height: 170px;
   border-radius: 50%;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -108,6 +130,8 @@ li {
   top: 60px;
   text-align: center;
   border: 2px solid #E24501;
+  transition: 0.3s all;
+  cursor: pointer;
 }
 
 .circle .colo {
@@ -118,7 +142,7 @@ li {
 .eve-card .rec {
   width: 370px;
   height: 390px;
-  background-color: #E98C64;
+  background-color: #715449;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -150,14 +174,24 @@ li {
 
 #about {
   color: white;
-  /* background: url('../img/main.jpg') no-repeat center center/cover; */
-  background-color: #391F14;
   padding: 10px 0px;
+  text-align: left !important;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .abo {
   display: flex;
   /* position: relative; */
+}
+
+#about .abo .abo-main .heading {
+  text-align: left !important;
+  margin-left: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
 }
 
 .gear img {
@@ -184,6 +218,7 @@ li {
 .heading {
   text-align: center;
   margin: 70px 20px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.0rem;
 }
 
@@ -191,8 +226,7 @@ li {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   /* text-align: center; */
-  margin: 50px 6%;
-  margin-bottom: 13%;
+  margin-bottom: 100px;
 }
 
 .abo-row {
@@ -202,38 +236,90 @@ li {
 }
 
 .abo-card {
-  width: 200px;
-  height: 140px;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: #B49791;
+}
+
+.heading img,
+.hm-heading img {
+  max-width: 700px;
+}
+
+.eve-info p {
+  font-size: medium;
+}
+
+.eve-card .rec p {
+  font-size: medium;
 }
 
 .abo-card h1 {
   font-size: 45px;
+  color: black
 }
 
 .abo-card p {
   font-size: 20px;
+  color: #741919;
 }
 
 /* Competiton Style  */
 #competition {
   color: white;
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#competition .heading {
+  text-align: center;
+  background: rgba(180, 151, 145, 0.13);
+  border-radius: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding: 40px 20px;
+}
+
+#competition .heading img {
+  width: 100%;
+}
+
+#competition button {
+  position: static;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.comp-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 6%;
+  color: #B49791;
 }
 
 .comp-card {
-  height: 200px;
-  width: 280px;
-  flex-direction: row;
+  height: max-content;
+  width: 20vw;
+  flex-direction: column;
   border: 2px solid #ED4B06;
-  /* border: 2px solid transparent;
-    border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.48),
-    rgba(237, 75, 6, 0.25),
-    rgba(225, 60, 4, 0.48),
-    rgba(245, 83, 10, 0.61));
-    border-image-slice: 1; */
   transition: 0.2s all;
+  margin: 20px 0;
+  padding: 30px 20px;
+  background-color: #B8866E;
+}
+
+.comp-card img {
+  width: 80%;
+}
+
+.comp-card p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: large;
 }
 
 .comp-card:hover {
@@ -245,21 +331,116 @@ li {
   font-size: 26px;
 }
 
+.comp {
+  display: flex;
+  justify-content: space-between;
+}
+
 .comp-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin: 50px 35px;
   overflow-x: visible;
 }
 
+.hackathons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.hackathons .card {
+  background-color: #B49791;
+}
+
 /* Workshops Style  */
 #workshop {
-  padding: 100px 0;
-  background: #010101;
   font-family: 'Open Sans';
   font-style: normal;
-  padding: 100px 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+}
 
+.ws-heading {
+  text-align: center;
+  background: url('../img/workshop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  /* background: rgba(180, 151, 145, 0.13); */
+  border-radius: 200px;
+  width: 90%;
+  padding: 50px 0 !important;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.big-gear {
+  position: absolute;
+  right: 33vw;
+  bottom: 4vw;
+  height: 9vw;
+  width: 9vw;
+  max-width: 80px !important;
+  max-height: 80px;
+  animation: rotation 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.plus-icon {
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  left: 0;
+  background-color: rgb(0,0,0,0.8);
+  display: none;
+  z-index: 10;
+  transition: 0.3s all;
+}
+
+.ws-card h3 {
+  font-size: x-large !important;
+}
+
+
+.small-gear {
+  position: absolute;
+  right: 36vw;
+  bottom: 1vw;
+  height: 7vw;
+  width: 7vw;
+  max-width: 50px !important;
+  max-height: 50px;
+  animation: rotation 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#workshop .ws-desc {
+  text-align: center !important;
+  font-size: x-large;
+  color: #B49791;
 }
 
 .hm-heading,
@@ -269,12 +450,12 @@ li {
   justify-content: center;
   align-items: center;
   color: white;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .ws-card-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* width: 100%; */
   justify-content: space-between;
 }
@@ -298,22 +479,18 @@ li {
 
 .ws-container {
   padding: 60px 100px;
-  background-image: url(../img/ws-images/Ellipse.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 450px;
 }
 
 .ws-card {
-  width: 507px;
-  height: 321px;
-  background: radial-gradient(100% 100% at 28.98% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+  width: 20vw;
+  height: 15vw;
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,6 +500,8 @@ li {
   z-index: 1;
   border: 1px solid red;
   transition: 0.3s all;
+  padding: 10px;
+  background-color: #B49791;
 }
 
 .ws-card:hover {
@@ -331,8 +510,9 @@ li {
 }
 
 .ws-card img {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
 }
 
 .ws-card h3 {
@@ -389,14 +569,26 @@ li {
   }
 
   .ws-card {
-    width: 325px;
-    height: 250px;
+    width: 85vw;
+    height: max-content;
     margin: 20px;
   }
 
   .ws-card img {
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: 20%;
+  }
+
+  .ws-container {
+    flex-direction: column;
+  }
+
+  #about {
+    padding: 20px;
+  }
+
+  .heading {
+    margin: 30px 0;
   }
 }
 
@@ -500,6 +692,30 @@ li {
     text-align: center;
   } */
 
+.sp-heading {
+  text-align: center;
+  background: rgba(180, 151, 145, 0.13);
+  border-radius: 200px;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: -50px;
+}
+
+.sp-heading img {
+  max-width: 600px !important;
+}
+
+#speakers {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#speakers .sp-desc {
+  color: #B49791 !important;
+}
 
 .sp-card {
   display: flex;
@@ -509,25 +725,13 @@ li {
 }
 
 .sp-image img {
-  height: 350px;
-  width: 350px;
+  height: 20vw;
+  width: 20vw;
   object-fit: cover;
   border-radius: 175px;
 }
 
 .sp-speaker-name {
-  width: 361px;
-  height: 117px;
-  background: radial-gradient(100% 100% at 28.98% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
-  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 20px;
-  position: relative;
-  bottom: 75px;
-  border: 4px solid #E36D3D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,7 +741,13 @@ li {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #E36D3D;
+  color: #FAD8BA;
+  font-family: 'Roboto';
+  font-size: x-large;
+}
+
+.circle:hover {
+  top: 40px;
 }
 
 .sp-button {
@@ -587,7 +797,6 @@ li {
 }
 
 #speakers {
-  background: rgb(0, 0, 0, 0.8);
   font-family: 'Open Sans';
   font-style: normal;
   /* height: 100vh; */
@@ -597,7 +806,7 @@ li {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 @media(max-width:900px) {
@@ -629,14 +838,17 @@ li {
   }
 
   .sp-image img {
-    height: 250px;
-    width: 250px;
+    height: 45vw;
+    width: 45vw;
     border-radius: 125px;
   }
 
-  .sp-speaker-name {
-    width: 261px;
-    height: 85px;
+  .sp-card {
+    width: max-content;
+  }
+
+  .sp-speaker-name h3 {
+    font-size: medium !important;
   }
 
   .sp-button {
@@ -667,8 +879,9 @@ li {
   padding: 100px;
   align-items: center;
   text-align: center;
-  background-color: #E98C64;
   position: relative;
+  background-color: rgb(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .quote {
@@ -692,10 +905,11 @@ li {
 .quotes .back-to-top {
   margin-top: 0px;
   background: #D9D9D9;
-  box-shadow: 0px 4px 4px rgba(245, 83, 10, 0.61);
-  border-radius: 20px;
-  color: #E36D3D;
+  border-radius: 40px;
+  color: black;
   font-size: large;
+  display: flex;
+  align-items: center;
   padding: 15px 25px;
   border: none;
   z-index: 1000;
@@ -711,11 +925,14 @@ li {
 }
 
 .footer {
-  background-color: #391F14;
   padding: 100px 0;
+  padding-top: 0;
   color: white;
   text-align: center;
   font-size: x-large;
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .footer .socials {
@@ -920,7 +1137,7 @@ a {
 }
 
 .popup-modal .description-box p {
-  font:18px/24px "merriweather-regular", serif;
+  font: 18px/24px "merriweather-regular", serif;
   color: #2b2b2b;
   margin-bottom: 12px;
 }
