@@ -166,8 +166,9 @@ li {
 }
 
 .eve-btn:hover {
-  background-color: #ED4B06;
-  color: white
+  background-color: #811400;
+  color: white;
+  cursor: pointer;
 }
 
 /* About CSS  */
@@ -192,6 +193,16 @@ li {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .gear img {
@@ -1029,13 +1040,15 @@ li {
 }
 
 .btn-arrow-left {
-  top: 34%;
+  top: 50%;
   left: 0;
+  transform: translate(0, -50%);
 }
 
 .btn-arrow-right {
-  top: 34%;
+  top: 50%;
   right: 0;
+  transform: translate(0, -50%);
 }
 
 .icon {
@@ -1065,6 +1078,7 @@ li {
   align-items: center;
   position: absolute;
   width: 80rem;
+  height: 100%;
   transition: all 0.3s;
 }
 
@@ -1290,4 +1304,94 @@ a {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #222;
+  z-index: 9999999;
+  height: 100%;
+  width: 100%;
+  font-family: 'Bazar';
+}
+
+.no-js #preloader,
+.oldie #preloader {
+  display: none;
+}
+
+#loader {
+  margin-top: 20vh;;
+}
+
+#loader svg {
+  display: block;
+  font: 150px 'Bazar';
+  width: 100vw;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.spacer {
+  min-height: 140px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #F0A202;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #e64e04;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #fff49b;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #fd8a01;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #FDB731;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+.t-yellow {
+  color: white;
+  padding: 0 25px 0 25px !important;
+  margin-right: 30px;
+  border-radius:4px;
+  position:absolute;
+  font-size: 15px;
+  text-transform: uppercase;
+  left:30%;
+  /* text-align: center; */
+  background: #FF2929;
+  font-family: "Montserrat", sans-serif;
+}
+
+li.t-yellow {
+  background:none;
 }
