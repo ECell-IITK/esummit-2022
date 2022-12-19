@@ -210,6 +210,10 @@ li {
   font-weight: 700;
 }
 
+.abo-main .para {
+  color: rgb(209, 209, 209);
+}
+
 h1 {
   font-family: 'Open Sans';
   font-style: normal;
@@ -717,6 +721,11 @@ p {
 
 #speakers .sp-desc {
   color: #B49791 !important;
+  padding-top: 20px;
+}
+
+.sp-desc p {
+  font-size: large;
 }
 
 .sp-card {
