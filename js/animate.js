@@ -1,7 +1,7 @@
 // check if element is in view
 function inView(selector) {
-  element = 
-  
+  element = document.querySelector(selector);
+
   // get window height
   var windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
@@ -22,28 +22,43 @@ function inView(selector) {
 }
 
 const animateCSS = (element, animation, prefix = "animate__") => {
-  document.addEventListener("scroll", () =>
-    animate(document.querySelector(element))
-  );
+  document.querySelector(element).style.display = "none";
+  document.addEventListener("scroll", () => {
+    if (inView(element)) {
+      console.log(element, "trigger animation");
+      new Promise((resolve, reject) => {
+        const animationName = `${prefix}${animation}`;
+        const node = document.querySelector(element);
 
-  if (inView(element)) {
-    console.log("animation to be triggered");
-    new Promise((resolve, reject) => {
-      const animationName = `${prefix}${animation}`;
-      const node = document.querySelector(element);
+        document.querySelector(element).style.display = "";
+        node.classList.add(`${prefix}animated`, animationName);
 
-      node.classList.add(`${prefix}animated`, animationName);
+        // // When the animation ends, we clean the classes and resolve the Promise
+        // function handleAnimationEnd(event) {
+        //   event.stopPropagation();
+        //   node.classList.remove(`${prefix}animated`, animationName);
+        //   resolve("Animation ended");
+        // }
 
-      // When the animation ends, we clean the classes and resolve the Promise
-      function handleAnimationEnd(event) {
-        event.stopPropagation();
-        node.classList.remove(`${prefix}animated`, animationName);
-        resolve("Animation ended");
-      }
-
-      node.addEventListener("animationend", handleAnimationEnd, { once: true });
-    });
-  }
+        // node.addEventListener("animationend", handleAnimationEnd, {
+        //   once: true,
+        // });
+      });
+    }
+  });
 };
 
-animateCSS(".h1animation", "fadeInUp");
+animateCSS(".h1animation", "flipInX");
+animateCSS(".h2animation", "flipInX");
+animateCSS(".p1", "fadeInUp");
+animateCSS(".p2", "fadeInUp");
+
+animateCSS("#competition .heading", "slideInUp");
+
+animateCSS(".cl1", "slideInRight");
+animateCSS(".cl2", "slideInRight");
+animateCSS(".cr1", "lightSpeedInRight");
+animateCSS(".cr2", "lightSpeedInRight");
+animateCSS(".cm1", "zoomInUp");
+animateCSS(".cm1", "zoomInUp");
+animateCSS(".cm1", "zoomInUp");
