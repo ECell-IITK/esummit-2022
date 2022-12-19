@@ -76,9 +76,25 @@
     flex-direction: column;
 }
 
+.popup-modal .description-box p {
+    font-size: medium;
+}
+
+.popup-modal .description-box {
+    padding: 15px;
+}
+
 .comp-card {
     margin: 10px auto;
     width: 240px;
+}
+
+.moto p {
+    font-size: medium;
+}
+
+.quotes {
+    padding-top: 0
 }
 
 .btn-arrow {
@@ -99,6 +115,24 @@
 
 .container .slide {
     width: 95vw;
+}
+
+.slider .slide {
+    width: 150px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-150px*4));
+    }
+}
+
+.slider .slide-track {
+    animation: scroll 10s linear infinite;
+    width: calc(150px*8);
 }
 
 .quote {
