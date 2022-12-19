@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
@@ -103,13 +107,14 @@
       </video>
       <div class="homepage">
         <div class="home-main">
-          <img class="animate-intro" src="img/lg.png" alt="" />
+          <img class="" src="img/e summit logo brown.png" alt="" />
           <div class="hp-content">
-            <h1>Date : 13th - 15th Jan 2023</h1>
-            <p>
-              Sometimes you just have to outlast the others.Sometimes you just
-              have to hold on at the end.Sometimes the most beautiful results
-              come from dull things under pressure.
+            <h1>13th - 15th January 2023</h1>
+            <p style="max-width: 1000px">
+              "Twenty years from now you will be more disappointed by the things
+              that you didn’t do than by the ones you did do. So throw off the
+              bowlines. Sail away from the safe harbor. Catch the trade winds in
+              your sails. Explore. Dream. Discover."
             </p>
           </div>
           <div class="hp-btn">
@@ -138,8 +143,8 @@
                             <img src="img/triangle2.png" alt="">
                         </div>
                     </div> -->
-            <div class="heading">
-              <h1>What is E-Summit ?</h1>
+            <div class="heading h1animation">
+              <h1 style="text-align: center">What is E-Summit ?</h1>
             </div>
             <div class="para">
               <p>
@@ -153,7 +158,9 @@
               </p>
             </div>
             <div class="heading">
-              <h1>E-SUMMIT'22 - RENAISSANCE & RISE.</h1>
+              <h1 style="text-align: center">
+                E-SUMMIT'22: RENAISSANCE & RISE
+              </h1>
             </div>
             <div class="para">
               <p>
@@ -198,7 +205,7 @@
       </video>
       <div class="eve common">
         <div class="eve-heading">
-          <h1>WHAT DO WE DO?</h1>
+          <h1>OUR FLAGSHIP EVENTS</h1>
         </div>
         <div class="eve-info">
           <p>
@@ -298,28 +305,6 @@
             </a>
           </div>
           <div class="comp-row">
-            <a href="#modal-03"
-              ><div class="comp-card card">
-                <img src="img/Stock the Stock.png" />
-
-                <p>
-                  Show off your Fin Gyan by trading in a live stock trading
-                  competition. Apply your aptitude, analyze the market
-                  fluctuations
-                </p>
-
-                <button class="eve-btn">Read More</button>
-              </div>
-            </a>
-
-            <div class="comp-card card">
-              <img src="img/UpstartLogo_White-01.png" />
-
-              <p>Upstart Campus</p>
-
-              <button class="eve-btn">Coming Soon</button>
-            </div>
-
             <a href="#modal-02"
               ><div class="comp-card card">
                 <img src="img/DECRYPT.png" />
@@ -332,6 +317,25 @@
                 <button class="eve-btn">Read More</button>
               </div></a
             >
+
+            <div class="comp-card card">
+              <img src="img/UpstartLogo_White-01.png" />
+
+              <p>Upstart Campus</p>
+
+              <button class="eve-btn">Coming Soon</button>
+            </div>
+
+            <div class="comp-card card">
+              <div class="comp-head" style="text-align: center">
+                <h1>Coming</h1>
+                <h1>Soon</h1>
+              </div>
+
+              <p>More Competitions coming soon...</p>
+
+              <!-- <button class="eve-btn">Read More</button> -->
+            </div>
           </div>
           <div class="comp-row" style="padding: 10vw 0">
             <a href="#modal-06"
@@ -351,18 +355,19 @@
               </div></a
             >
 
-            <div class="comp-card card">
-                <div class="comp-head" style="text-align: center;">
-                  <h1>Coming</h1>
-                  <h1>Soon</h1>
-                </div>
+            <a href="#modal-03"
+              ><div class="comp-card card">
+                <img src="img/Stock the Stock.png" />
 
                 <p>
-                  More Competitions coming soon...
+                  Show off your Fin Gyan by trading in a live stock trading
+                  competition. Apply your aptitude, analyze the market
+                  fluctuations
                 </p>
 
-                <!-- <button class="eve-btn">Read More</button> -->
+                <button class="eve-btn">Read More</button>
               </div>
+            </a>
           </div>
         </div>
 
@@ -425,7 +430,7 @@
       <video autoplay muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
       </video>
-      <div class="ws-heading hm-heading">
+      <div class="ws-heading hm-heading" style="padding-top: 0">
         <img src="img/workshop-heading.png" />
         <img src="img/big-gear.png" class="big-gear" />
         <img src="img/small-gear.png" class="small-gear" />
@@ -488,11 +493,11 @@
     </section>
 
     <!-- Speakers  -->
-    <section id="speakers">
+    <section id="speakers" style="padding-top: 0">
       <video autoplay muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
       </video>
-      <div class="sp-heading hm1-heading">
+      <div class="sp-heading hm1-heading" style="padding-top: 0">
         <img src="img/speaker-hd.png" alt="" />
       </div>
       <div class="sp-desc hm1-desc">
@@ -760,7 +765,7 @@
         <img src="img/ecell-logo.png" />
       </div>
 
-      <p>Ideate. Innovate. Incubate</p>
+      <p>Ideate. Innovate. Incubate.</p>
     </section>
 
     <section class="contact">
@@ -818,5 +823,6 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/waypoint.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>

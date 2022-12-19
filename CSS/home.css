@@ -108,6 +108,11 @@ body {
   position: relative;
 }
 
+.hp-content h1 {
+  margin-bottom: 40px;
+  font-size: xx-large;
+}
+
 .home-main {
   display: flex;
   flex-direction: column;
@@ -121,7 +126,7 @@ body {
 .home-main img {
   width: 45%;
   max-width: 700px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .home-main .home-head {
