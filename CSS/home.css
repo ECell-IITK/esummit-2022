@@ -144,6 +144,7 @@ body {
 .hp-content p {
   margin: 20px 14%;
   font-size: 18px;
+  width: max-content;
 }
 
 .hp-btn {

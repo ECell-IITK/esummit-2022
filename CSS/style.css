@@ -351,12 +351,14 @@ p {
 
 .comp-card img {
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .comp-card p {
   margin: 20px 0;
   text-align: center;
-  font-size: large;
+  font-size: medium;
 }
 
 .comp-card:hover {
@@ -389,6 +391,7 @@ p {
 
 .hackathons .card {
   background-color: #B49791;
+  height: 400px;
 }
 
 /* Workshops Style  */
@@ -422,8 +425,8 @@ p {
 
 .big-gear {
   position: absolute;
-  right: 29.5vw;
-  bottom: 2vw;
+  right: 36%;
+  bottom: 12%;
   height: 9vw;
   width: 9vw;
   max-width: 80px !important;
@@ -454,8 +457,8 @@ p {
 
 .small-gear {
   position: absolute;
-  right: 32vw;
-  bottom: -1vw;
+  right: 40%;
+  bottom: -5%;
   height: 7vw;
   width: 7vw;
   max-width: 50px !important;
@@ -1142,6 +1145,7 @@ a {
   border-radius: 20px;
   position: relative;
   margin: 0 auto;
+  max-height: 80vh;
 }
 
 .popup-modal .media {
@@ -1332,10 +1336,10 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #222;
+  background: black;
   z-index: 9999999;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   font-family: 'Bazar';
   display: flex;
   justify-content: center;
@@ -1347,8 +1351,10 @@ a {
   display: none;
 }
 
-#loader {
-  transform: translate(0, -50%)
+#loader video {
+  width: 100vw;
+  height: 100vh;
+  max-width: 800px;
 }
 
 #loader svg {
@@ -1359,60 +1365,64 @@ a {
   margin: 0 auto;
 }
 
-.text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+/* Main stuff */
+.text--transparent {
+  fill: transparent;
 }
 
-.text-copy:nth-child(1) {
-  stroke: #F0A202;
-  animation-delay: -1;
+.anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
 }
 
-.text-copy:nth-child(2) {
-  stroke: #e64e04;
-  animation-delay: -2s;
+.colortext .anim-shape:nth-child(1) {
+  fill: #F14F04;
 }
 
-.text-copy:nth-child(3) {
-  stroke: #fff49b;
-  animation-delay: -3s;
+.colortext .anim-shape:nth-child(2) {
+  fill: #D23103;
 }
 
-.text-copy:nth-child(4) {
-  stroke: #fd8a01;
-  animation-delay: -4s;
+.colortext .anim-shape:nth-child(3) {
+  fill: #9B1901;
 }
 
-.text-copy:nth-child(5) {
-  stroke: #FDB731;
-  animation-delay: -5s;
+.colortext .anim-shape:nth-child(4) {
+  fill: #552026;
 }
 
-@keyframes stroke-offset {
+.colortext .anim-shape:nth-child(5) {
+  fill: #8D1801;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
   100% {
-    stroke-dashoffset: -35%;
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
   }
 }
 
-.t-yellow {
-  color: white;
-  padding: 0 25px 0 25px !important;
-  margin-right: 30px;
-  border-radius: 4px;
-  position: absolute;
-  font-size: 15px;
-  text-transform: uppercase;
-  left: 30%;
-  /* text-align: center; */
-  background: #FF2929;
-  font-family: "Montserrat", sans-serif;
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
 }
 
-li.t-yellow {
-  background: none;
+.content {
+  font: 800 14.5em/1 'Open Sans', Impact;
 }
