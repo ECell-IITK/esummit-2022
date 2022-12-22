@@ -349,7 +349,7 @@ p {
   transition: 0.2s all;
   margin: 20px 0;
   padding: 30px 20px;
-  background-color: #B8866E;
+  background-color: black;
 }
 
 .comp-card img {
@@ -381,7 +381,7 @@ p {
 .comp-row {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 50px 35px;
   overflow-x: visible;
 }
@@ -1166,6 +1166,7 @@ a {
   overflow-y: auto;
   padding: 6px 36px 30px;
   background: transparent;
+  overflow: visible;
 }
 
 .popup-modal .description-box h4 {
@@ -1175,6 +1176,7 @@ a {
   margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
+  overflow: visible;
 }
 
 .popup-modal .description-box p {
