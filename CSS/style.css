@@ -375,7 +375,10 @@ p {
 
 .comp {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: max-content;
+  align-items: stretch;
+  margin: 0 auto;
 }
 
 .comp-row {
