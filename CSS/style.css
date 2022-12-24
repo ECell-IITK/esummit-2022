@@ -391,14 +391,14 @@ p {
 
 .hackathons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 50px;
   align-items: center;
 }
 
 .hackathons .card {
   background-color: #B49791;
-  height: 400px;
+  height: 350px;
 }
 
 /* Workshops Style  */
@@ -534,9 +534,9 @@ p {
 }
 
 .ws-card {
-  width: 20vw;
+  width: 25vw;
   min-width: 200px;
-  height: 15vw;
+  height: 20vw;
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
@@ -771,6 +771,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.sp-speaker-name h4 {
+  font-weight: 600;
+  color: #FAD8BA;
+  font-family: 'Roboto';
+  font-size: medium;
 }
 
 .sp-speaker-name h3 {
