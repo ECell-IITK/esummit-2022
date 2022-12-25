@@ -206,6 +206,12 @@ li {
   /* position: relative; */
 }
 
+.abo-main {
+  max-width: 1250px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
 #about .abo .abo-main .heading {
   text-align: left !important;
   margin-left: 0;
