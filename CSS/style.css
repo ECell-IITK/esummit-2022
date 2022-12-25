@@ -397,7 +397,7 @@ p {
 }
 
 .hackathons .card {
-  background-color: #B49791;
+  background-color: transparent;
   height: 350px;
 }
 
@@ -537,6 +537,7 @@ p {
   width: 25vw;
   min-width: 200px;
   height: 20vw;
+  min-height: max-content;
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
@@ -548,10 +549,55 @@ p {
   text-align: center;
   margin: 4vw;
   z-index: 1;
-  border: 1px solid red;
+  border: 2px solid #ED4B06;
   transition: 0.3s all;
   padding: 10px;
-  background-color: #B49791;
+}
+
+.ws-card {
+  position: relative;
+  z-index: 1;
+}
+
+.ws-card img,
+.ws-card h3 {
+  position: relative;
+}
+
+.ws-card::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #b49791;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: 0;
+}
+
+a[href="#workshop-04"] .ws-card::before {
+  background-image: url('../img/ws-images/nft-bg.png');
+  opacity: 0.4;
+}
+
+a[href="#workshop-03"] .ws-card::before {
+  background-image: url('../img/ws-images/networking-bg.png');
+}
+
+a[href="#workshop-05"] .ws-card::before {
+  background-image: url('../img/ws-images/marketing.png');
+}
+
+a[href="#workshop-01"] .ws-card::before {
+  background-image: url('../img/ws-images/customers.png');
+  background-blend-mode: color-burn;
+  background-color: #bb897f;
 }
 
 .ws-card:hover {
@@ -1189,9 +1235,10 @@ a {
 
 .popup-modal .description-box h4 {
   font: 24px/24px "raleway-heavy", sans-serif;
-  color: #891502;
+  color: #FF2929;
   margin: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
   font-weight: bold;
   overflow: visible;
