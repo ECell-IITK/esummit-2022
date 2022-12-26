@@ -1683,6 +1683,11 @@ svg #wheel {
   background: linear-gradient(90deg, #e84242, #552026);
 }
 
+.cursor {
+  pointer-events: none;
+
+}
+
 .cursor__ball {
   position: fixed;
   top: 0;
