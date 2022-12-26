@@ -1602,7 +1602,8 @@ svg #wheel {
   }
 
   #about {
-    padding: 50px 20px !important;
+    padding: 50px 20px;
+    padding-top: 0;
   }
 
   #about .section-end {

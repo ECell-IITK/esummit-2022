@@ -29,7 +29,8 @@
 
 .eve-card .rec {
     width: 300px;
-    height: 400px;
+    height: max-content;
+    padding-top: 50px;
 }
 
 .eve-card .circle {
