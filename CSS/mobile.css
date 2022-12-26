@@ -167,6 +167,10 @@
     font-size: large;
 }
 
+.cursor {
+    display: none;
+}
+
 .abo-card {
     width: 20vw;
     height: 20vw;
