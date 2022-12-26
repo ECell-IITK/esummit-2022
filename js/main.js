@@ -133,13 +133,13 @@ dotsContainer.addEventListener("click", function (e) {
       const diff = esummit - today;
       if (diff < 0) return;
       let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      if(days <= 9) days = "0" + days;
+      if (days <= 9) days = "0" + days;
       let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      if(hours <= 9) hours = "0" + hours;
+      if (hours <= 9) hours = "0" + hours;
       let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      if(minutes <= 9) minutes = "0" + minutes;
+      if (minutes <= 9) minutes = "0" + minutes;
       let seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      if(seconds <= 9) seconds = "0" + seconds;
+      if (seconds <= 9) seconds = "0" + seconds;
       document.getElementById("timer").innerHTML =
         '<div class="days"> \
         <div class="numbers">' +
@@ -159,6 +159,14 @@ dotsContainer.addEventListener("click", function (e) {
         "</div><div>seconds</div></div> \
       </div>";
     }, 1000);
+
+    // cursor binder
+    document.body.addEventListener("mousemove", (e) => {
+      TweenMax.to(document.querySelector(".cursor__ball"), 0.4, {
+        x: e.pageX - 15,
+        y: e.pageY - window.scrollY - 15,
+      });
+    });
   });
 
   const burger = document.querySelector(".burger");
@@ -236,7 +244,6 @@ dotsContainer.addEventListener("click", function (e) {
   //   });
   // });
 })(jQuery);
-
 
 // ScrollReveal({
 //   reset: false,
