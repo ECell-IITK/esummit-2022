@@ -45,6 +45,12 @@
 .para {
     font-size: medium;
     color: rgb(222, 221, 221);
+    margin-bottom: 50px;
+}
+
+#about .section-end {
+    position: relative;
+    top: 50px
 }
 
 .home-btn {
@@ -166,6 +172,10 @@
     height: 20vw;
     padding: 20px;
     font-size: medium !important;
+}
+
+.abo-card p {
+    font-size: 15px;
 }
 
 .eve-heading h1 {
