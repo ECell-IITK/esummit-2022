@@ -202,3 +202,21 @@ dotsContainer.addEventListener("click", function (e) {
   //   });
   // });
 })(jQuery);
+
+
+ScrollReveal({
+  reset: false,
+  distance: '65px',
+  duration: 1450,
+  delay: 60
+});
+
+ScrollReveal().reveal('.home-main', { delay: 650, origin: 'bottom', interval:200 });
+
+// ScrollReveal().reveal('.hp-btn, .abo-btn', { delay: 650, origin: 'bottom', interval:200 });
+ScrollReveal().reveal('.heading', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.para, .ws-desc', { delay: 600, origin: 'right' });
+ScrollReveal().reveal('.eve-card', { delay: 700, origin: 'bottom' });
+ScrollReveal().reveal('.comp-card, .ws-card', { delay: 600, origin: 'bottom', interval:100 });
+// ScrollReveal().reveal('.content .info img, .img1 img', { delay: 600, origin: 'right' });
+// ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});
