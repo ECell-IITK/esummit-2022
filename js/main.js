@@ -125,6 +125,36 @@ dotsContainer.addEventListener("click", function (e) {
           }
         );
     });
+
+    // Timer
+    const esummit = new Date(2023, 0, 13, 18, 0, 0).getTime();
+    setInterval(function () {
+      const today = new Date().getTime();
+      const diff = esummit - today;
+      if (diff < 0) return;
+      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML =
+        '<div class="days"> \
+        <div class="numbers">' +
+        days +
+        '</div><div>days</div></div> \
+      <div class="hours"> \
+        <div class="numbers">' +
+        hours +
+        '</div><div>hours</div></div> \
+      <div class="minutes"> \
+        <div class="numbers">' +
+        minutes +
+        '</div><div>minutes</div></div> \
+      <div class="seconds"> \
+        <div class="numbers">' +
+        seconds +
+        "</div><div>seconds</div></div> \
+      </div>";
+    }, 1000);
   });
 
   const burger = document.querySelector(".burger");
