@@ -160,13 +160,30 @@ dotsContainer.addEventListener("click", function (e) {
       </div>";
     }, 1000);
 
+    const $ball = document.querySelector(".cursor__ball")
     // cursor binder
     document.body.addEventListener("mousemove", (e) => {
-      TweenMax.to(document.querySelector(".cursor__ball"), 0.4, {
+      TweenMax.to($ball, 0.4, {
         x: e.pageX - 15,
         y: e.pageY - window.scrollY - 15,
       });
     });
+
+    const $hoverables = document.querySelectorAll(".hoverables");
+    for (let i = 0; i < $hoverables.length; i++) {
+      $hoverables[i].addEventListener("mouseenter", () => {
+        TweenMax.to($ball, 0.3, {
+          scale: 4,
+        });
+        $ball.classList.add("ball_hovered")
+      });
+      $hoverables[i].addEventListener("mouseleave", () => {
+        TweenMax.to($ball, 0.3, {
+          scale: 1,
+        });
+        $ball.classList.remove("ball_hovered")
+      });
+    }
   });
 
   const burger = document.querySelector(".burger");
