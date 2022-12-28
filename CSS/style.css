@@ -1699,8 +1699,8 @@ svg #wheel {
 }
 
 circle {
-  fill: #f7f8fa;
-  opacity: 0.6;
+  fill: #656565;
+  opacity: 0.8;
 }
 
 .ball_hovered {
