@@ -722,7 +722,7 @@ a[href="#workshop-01"] .ws-card::before {
   }
 
   100% {
-    transform: translateX(calc(-350px * 10));
+    transform: translateX(calc(-350px * 9));
   }
 }
 
@@ -761,7 +761,7 @@ a[href="#workshop-01"] .ws-card::before {
 .slider .slide-track {
   animation: scroll1 30s linear infinite;
   display: flex;
-  width: calc(350px*20);
+  width: calc(350px*18);
   animation-iteration-count: infinite;
   overflow-x: visible;
 }
@@ -1704,5 +1704,5 @@ circle {
 }
 
 .ball_hovered {
-  mix-blend-mode:overlay;
+  mix-blend-mode: overlay;
 }
