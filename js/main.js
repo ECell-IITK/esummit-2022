@@ -125,6 +125,65 @@ dotsContainer.addEventListener("click", function (e) {
           }
         );
     });
+
+    // Timer
+    const esummit = new Date(2023, 0, 13, 18, 0, 0).getTime();
+    setInterval(function () {
+      const today = new Date().getTime();
+      const diff = esummit - today;
+      if (diff < 0) return;
+      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      if (days <= 9) days = "0" + days;
+      let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      if (hours <= 9) hours = "0" + hours;
+      let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      if (minutes <= 9) minutes = "0" + minutes;
+      let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      if (seconds <= 9) seconds = "0" + seconds;
+      document.getElementById("timer").innerHTML =
+        '<div class="days"> \
+        <div class="numbers">' +
+        days +
+        '</div><div>days</div></div><div class=colon>:</div> \
+      <div class="hours"> \
+        <div class="numbers">' +
+        hours +
+        '</div><div>hours</div></div><div class=colon>:</div> \
+      <div class="minutes"> \
+        <div class="numbers">' +
+        minutes +
+        '</div><div>minutes</div></div><div class=colon>:</div> \
+      <div class="seconds"> \
+        <div class="numbers">' +
+        seconds +
+        "</div><div>seconds</div></div> \
+      </div>";
+    }, 1000);
+
+    const $ball = document.querySelector(".cursor__ball")
+    // cursor binder
+    document.body.addEventListener("mousemove", (e) => {
+      TweenMax.to($ball, 0.4, {
+        x: e.pageX - 15,
+        y: e.pageY - window.scrollY - 15,
+      });
+    });
+
+    const $hoverables = document.querySelectorAll(".hoverables");
+    for (let i = 0; i < $hoverables.length; i++) {
+      $hoverables[i].addEventListener("mouseenter", () => {
+        TweenMax.to($ball, 0.3, {
+          scale: 4,
+        });
+        $ball.classList.add("ball_hovered")
+      });
+      $hoverables[i].addEventListener("mouseleave", () => {
+        TweenMax.to($ball, 0.3, {
+          scale: 1,
+        });
+        $ball.classList.remove("ball_hovered")
+      });
+    }
   });
 
   const burger = document.querySelector(".burger");
@@ -203,20 +262,19 @@ dotsContainer.addEventListener("click", function (e) {
   // });
 })(jQuery);
 
+// ScrollReveal({
+//   reset: false,
+//   distance: '65px',
+//   duration: 1450,
+//   delay: 60
+// });
 
-ScrollReveal({
-  reset: false,
-  distance: '65px',
-  duration: 1450,
-  delay: 60
-});
+// ScrollReveal().reveal('.home-main', { delay: 650, origin: 'bottom', interval:200 });
 
-ScrollReveal().reveal('.home-main', { delay: 650, origin: 'bottom', interval:200 });
-
-// ScrollReveal().reveal('.hp-btn, .abo-btn', { delay: 650, origin: 'bottom', interval:200 });
-ScrollReveal().reveal('.heading', { delay: 500, origin: 'left' });
-ScrollReveal().reveal('.para, .ws-desc', { delay: 600, origin: 'right' });
-ScrollReveal().reveal('.eve-card', { delay: 700, origin: 'bottom' });
-ScrollReveal().reveal('.comp-card, .ws-card', { delay: 600, origin: 'bottom', interval:100 });
+// // ScrollReveal().reveal('.hp-btn, .abo-btn', { delay: 650, origin: 'bottom', interval:200 });
+// ScrollReveal().reveal('.heading', { delay: 500, origin: 'left' });
+// ScrollReveal().reveal('.para, .ws-desc', { delay: 600, origin: 'right' });
+// ScrollReveal().reveal('.eve-card', { delay: 700, origin: 'bottom' });
+// ScrollReveal().reveal('.comp-card, .ws-card', { delay: 600, origin: 'bottom', interval:100 });
 // ScrollReveal().reveal('.content .info img, .img1 img', { delay: 600, origin: 'right' });
 // ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});

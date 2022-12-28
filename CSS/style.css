@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+  font-family: technology;
+  src: url(../fonts/Technology-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +33,6 @@ li {
 .common {
   position: relative;
   max-width: 1450px;
-  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -49,14 +53,14 @@ li {
 }
 
 .hp-content h1 {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 /* Events CSS  */
 
 #Events {
   color: white;
-  padding: 50px 50px;
+  padding: 70px 50px;
   position: relative;
   overflow: hidden;
   background-color: rgb(0, 0, 0, 0.5);
@@ -87,6 +91,8 @@ li {
   width: 100%;
   margin-bottom: 20px;
   padding: 20px 15px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .eve-heading img {
@@ -257,7 +263,7 @@ p {
 
 .heading {
   text-align: center;
-  margin: 70px 20px;
+  margin: 40px 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.0rem;
 }
@@ -266,7 +272,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   /* text-align: center; */
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .abo-row {
@@ -371,7 +377,7 @@ p {
 }
 
 .comp-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   cursor: pointer;
 }
 
@@ -429,7 +435,6 @@ p {
   border-radius: 200px;
   width: 90%;
   padding: 50px 0;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -534,7 +539,7 @@ p {
 }
 
 .ws-container {
-  padding: 60px 50px;
+  padding: 0 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 450px;
@@ -717,7 +722,7 @@ a[href="#workshop-01"] .ws-card::before {
   }
 
   100% {
-    transform: translateX(calc(-350px * 4));
+    transform: translateX(calc(-350px * 10));
   }
 }
 
@@ -754,9 +759,9 @@ a[href="#workshop-01"] .ws-card::before {
 }
 
 .slider .slide-track {
-  animation: scroll1 15s linear infinite;
+  animation: scroll1 30s linear infinite;
   display: flex;
-  width: calc(350px*8);
+  width: calc(350px*20);
   animation-iteration-count: infinite;
   overflow-x: visible;
 }
@@ -1567,6 +1572,7 @@ svg #wheel {
   display: flex;
   justify-content: space-around;
   width: 50%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
@@ -1577,7 +1583,7 @@ svg #wheel {
   }
 
   .pc2 {
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
     max-width: 800px;
   }
@@ -1591,10 +1597,13 @@ svg #wheel {
   .price-card {
     width: 100%;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #about {
-    padding: 50px 20px !important;
+    padding: 50px 20px;
+    padding-top: 0;
   }
 
   #about .section-end {
@@ -1604,4 +1613,96 @@ svg #wheel {
   .abo-row {
     margin: 0;
   }
+}
+
+#timer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 40%;
+  max-width: 500px;
+  min-width: 350px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  font-family: 'roboto';
+  /* border: 1px solid rgb(255, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0 0 .1rem rgb(255, 255, 255),
+    0 0 .2rem #fff,
+    0 0 2rem #eb084c,
+    0 0 0.8rem #fe134e,
+    0 0 2.8rem #c90f0f,
+    inset 0 0 1.3rem #ac072a; */
+}
+
+#timer .days,
+#timer .hours,
+#timer .minutes,
+#timer .seconds {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+  padding-top: 0;
+  border: 2px solid #552026;
+  width: 100px;
+  height: max-content;
+}
+
+#timer .numbers {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+  font-family: 'technology';
+  font-size: 3rem;
+  padding-top: 20px;
+  width: 100%;
+}
+
+#timer .colon {
+  font-size: xx-large;
+}
+
+#timer .numbers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #e84242, #552026);
+}
+
+.cursor {
+  pointer-events: none;
+
+}
+
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: normal;
+  z-index: 1000;
+}
+
+circle {
+  fill: #f7f8fa;
+  opacity: 0.6;
+}
+
+.ball_hovered {
+  mix-blend-mode:overlay;
 }

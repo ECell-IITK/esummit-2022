@@ -29,7 +29,8 @@
 
 .eve-card .rec {
     width: 300px;
-    height: 400px;
+    height: max-content;
+    padding-top: 50px;
 }
 
 .eve-card .circle {
@@ -45,6 +46,12 @@
 .para {
     font-size: medium;
     color: rgb(222, 221, 221);
+    margin-bottom: 50px;
+}
+
+#about .section-end {
+    position: relative;
+    top: 50px
 }
 
 .home-btn {
@@ -161,11 +168,19 @@
     font-size: large;
 }
 
+.cursor {
+    display: none;
+}
+
 .abo-card {
     width: 20vw;
     height: 20vw;
     padding: 20px;
     font-size: medium !important;
+}
+
+.abo-card p {
+    font-size: 15px;
 }
 
 .eve-heading h1 {

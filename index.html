@@ -61,6 +61,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   </head>
 
   <body>
@@ -83,9 +84,9 @@
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#Events">EVENTS</a></li>
+        <li><a href="#speakers">SPEAKERS</a></li>
         <li><a href="#competition">COMPETITIONS</a></li>
         <li><a href="#workshop">WORKSHOPS</a></li>
-        <li><a href="#speakers">SPEAKERS</a></li>
         <li>
           <a
             href="register.html"
@@ -110,9 +111,9 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#Events">EVENTS</a></li>
+          <li><a href="#speakers">SPEAKERS</a></li>
           <li><a href="#competition">COMPETITIONS</a></li>
           <li><a href="#workshop">WORKSHOPS</a></li>
-          <li><a href="#speakers">SPEAKERS</a></li>
           <li>
             <a
               href="register.html"
@@ -146,13 +147,14 @@
             <h1>13th - 15th January 2023</h1>
             <p style="max-width: 1000px">"Learning never exhausts the mind."</p>
           </div>
+          <div id="timer"></div>
           <div class="hp-btn">
             <a href="register.html"
-              ><button class="home-btn colo">Register Now</button></a
+              ><button class="home-btn colo hoverables">Register Now</button></a
             >
             <a
               href="https://www.townscript.com/e/esummit22-official-merchandise-030102"
-              ><button class="home-btn">Get Merchandise</button></a
+              ><button class="home-btn hoverables">Get Merchandise</button></a
             >
           </div>
         </div>
@@ -196,9 +198,20 @@
             </div>
             <div class="para p2">
               <p>
-                The Renaissance, a french word meaning “re-birth”, was a time of transition from the ancient world to the modern. It was primarily an intellectual and cultural movement rather than a historical period that brought innovation to various fields, spanning from the social to the political until the artistic.
-                <br>
-                With such rapid change in the highly technological society that we live in today, an entrepreneurial spirit is required to harness new opportunities and create new innovations which fundamentally alter the course of humankind and drive the world forward toward positive ends. This effort to revive and surpass ideas and achievements of classical antiquity is what signifies the rise of innovation through the renaissance of entrepreneurship.
+                The Renaissance, a french word meaning “re-birth”, was a time of
+                transition from the ancient world to the modern. It was
+                primarily an intellectual and cultural movement rather than a
+                historical period that brought innovation to various fields,
+                spanning from the social to the political until the artistic.
+                <br />
+                With such rapid change in the highly technological society that
+                we live in today, an entrepreneurial spirit is required to
+                harness new opportunities and create new innovations which
+                fundamentally alter the course of humankind and drive the world
+                forward toward positive ends. This effort to revive and surpass
+                ideas and achievements of classical antiquity is what signifies
+                the rise of innovation through the renaissance of
+                entrepreneurship.
               </p>
             </div>
             <div class="abo-row">
@@ -221,8 +234,8 @@
             </div>
           </div>
         </div>
-        <hr class="section-end" />
       </div>
+      <hr class="section-end" />
     </section>
     <section id="Events">
       <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
@@ -232,7 +245,6 @@
         <div class="eve-heading heading">
           <img src="img/event-hd.png" />
         </div>
-        
 
         <div class="Eventcard">
           <div class="eve-card eve-card-ani">
@@ -252,7 +264,7 @@
                 community to help propel their growth.
               </p>
               <a href="https://ecelliitk.org/expo" target="_blank"
-                ><button class="eve-btn">READ MORE</button></a
+                ><button class="eve-btn hoverables">READ MORE</button></a
               >
             </div>
           </div>
@@ -273,20 +285,268 @@
                 prize.
               </p>
               <a href="https://ecelliitk.org/upstart" target="_blank"
-                ><button class="eve-btn">READ MORE</button>
+                ><button class="eve-btn hoverables">READ MORE</button>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <hr class="section-end" style="position: relative; top: 50px" />
+      <hr class="section-end" style="position: relative; top: 70px" />
+    </section>
+
+    <!-- Speakers  -->
+    <section id="speakers" style="padding-top: 0">
+      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+        <source src="bg-video/background.webm" />
+      </video>
+      <div class="sp-heading hm1-heading heading" style="padding-top: 0">
+        <img src="img/speaker-hd.png" alt="" />
+      </div>
+      <div class="sp-desc hm1-desc">
+        <p>
+          Entrepreneurs who have proved themselves as the mavericks will come to
+          share their success stories and ideology.
+        </p>
+      </div>
+      <div class="underline" style="margin-bottom: 50px"></div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/sweta bajpai.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Sweta Bajpai</h3>
+                <h4>Vertical Head, India Meta</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/vidushi jain.webp" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Vidushi Jain</h3>
+                <h4>CoFounder Attrangi</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="sp-card card-1">
+              <div class="sp-image">
+                <img src="img/sp-images/ashneer.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Ashneer Grover</h3>
+                <h4>Founder BharatPe</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-1">
+              <div class="sp-image">
+                <img src="img/sp-images/sanjiv rangrass.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Sanjiv Rangrass</h3>
+                <h4>Group Head ITC | ITC Mafia</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/bvr.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>BVR Mohan Reddy</h3>
+                <h4>Founder Director - T-Hub & Cyient</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/sandeep aggarwal.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Sandeep Aggarwal</h3>
+                <h4>Founder Droom & ShopClues</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/saurabh chandra.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Saurabh Chandra</h3>
+                <h4>Retired Secretary Government of India</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-2">
+              <div class="sp-image">
+                <img src="img/sp-images/prakash kumar.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Prakash Kumar</h3>
+                <h4>Chief Executive Officer at Wadhwani Institute</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-3">
+              <div class="sp-image">
+                <img src="img/sp-images/nishant.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Nishant Chandra</h3>
+                <h4>Founder Newton School</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/amit agarwal.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Amit Agarwal</h3>
+                <h4>Founder Nobroker</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-4">
+              <div class="sp-image">
+                <img src="img/sp-images/gautam raj anand.webp" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Gautam Raj Anand</h3>
+                <h4>Founder - Hubhopper</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-4">
+              <div class="sp-image">
+                <img src="img/sp-images/Ajit balakrishnan.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Ajit Balakrishnan</h3>
+                <h4>CEO Rediff.com</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/kanika tekriwal.webp" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Kanika Tekriwal</h3>
+                <h4>CEO JETSETGO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/ashish sinha.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Ashish Sinha</h3>
+                <h4>Founder NextBigWhat.com</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/ravi purohit.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Ravi Purohit</h3>
+                <h4>Vice President & India Head ColorTokens</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/shiva kumar.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Shiva Kumar R V</h3>
+                <h4>Deputy Chief Of Technolgy, NPCI</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/shawrya mehrotra.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Shawrya Mehrotra</h3>
+                <h4>Founder Metvy</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/satanik roy.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Satanik Roy</h3>
+                <h4>CoFounder - HyperXCharge</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/sudeep.jpeg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Sudeep Choudhari</h3>
+                <h4>India Head Blockchain NPCI</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/dhruvan thaker.webp" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Dhruvam Thaker</h3>
+                <h4>Founder - Smart Taxi</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="section-end" style="position: relative; top: 50px" />
+      </div>
+
+      <!-- <div class="sp-button">
+        <h3>VIEW ALL SPEAKERS</h3>
+        <img src="sp-images/arrow.png" alt="" />
+      </div> -->
     </section>
 
     <section id="competition">
       <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
       </video>
-      <div class="Competition common item-wrap" style="padding-bottom: 50px">
+      <div class="Competition common item-wrap">
         <div class="heading">
           <img src="img/comp-hd.png" />
         </div>
@@ -306,7 +566,7 @@
                   nerve-wracking.You wonder if they’ll like your idea.
                 </p>
 
-                <button class="eve-btn">Read More</button>
+                <button class="eve-btn hoverables">Read More</button>
               </div></a
             >
 
@@ -319,7 +579,7 @@
                   essential in the startup arena.
                 </p>
 
-                <button class="eve-btn">Read More</button>
+                <button class="eve-btn hoverables">Read More</button>
               </div>
             </a>
           </div>
@@ -333,20 +593,23 @@
                   about reading the situation and taking decisions
                 </p>
 
-                <button class="eve-btn">Read More</button>
+                <button class="eve-btn hoverables">Read More</button>
               </div></a
             >
 
             <a href="#modal-08" class="cm2">
-              <div class="comp-card card ">
+              <div class="comp-card card">
                 <img src="img/UpstartLogo_White-01.png" />
-  
-                <p>A classic pitching competition that showcases one's ability to ideate and pitch in front of judges from the across entrepreneurship world.</p>
-  
-                <button class="eve-btn">Read More</button>
+
+                <p>
+                  A classic pitching competition that showcases one's ability to
+                  ideate and pitch in front of judges from the across
+                  entrepreneurship world.
+                </p>
+
+                <button class="eve-btn hoverables">Read More</button>
               </div>
             </a>
-            
 
             <div class="comp-card card cm3">
               <div class="comp-head" style="text-align: center">
@@ -356,7 +619,7 @@
 
               <p>More Competitions coming soon...</p>
 
-              <!-- <button class="eve-btn">Read More</button> -->
+              <!-- <button class="eve-btn hoverables">Read More</button> -->
             </div>
           </div>
           <div class="comp-row">
@@ -371,7 +634,7 @@
                   competitions.
                 </p>
 
-                <button class="eve-btn">Read More</button>
+                <button class="eve-btn hoverables">Read More</button>
               </div></a
             >
 
@@ -386,7 +649,7 @@
                   play its game.
                 </p>
 
-                <button class="eve-btn">Read More</button>
+                <button class="eve-btn hoverables">Read More</button>
               </div>
             </a>
           </div>
@@ -415,7 +678,7 @@
                 blockchain.
               </p>
 
-              <button class="eve-btn">Read More</button>
+              <button class="eve-btn hoverables">Read More</button>
             </div></a
           >
 
@@ -427,7 +690,7 @@
 
             <p>More hackathons coming soon...</p>
 
-            <!-- <button class="eve-btn">Read More</button> -->
+            <!-- <button class="eve-btn hoverables">Read More</button> -->
           </div>
 
           <div class="comp-card card cm3">
@@ -438,12 +701,12 @@
 
             <p>More hackathons coming soon...</p>
 
-            <!-- <button class="eve-btn">Read More</button> -->
+            <!-- <button class="eve-btn hoverables">Read More</button> -->
           </div>
         </div>
       </div>
       <div id="event-popup-container"></div>
-      <hr class="section-end" />
+      <hr class="section-end" style="position: relative; top: 50px" />
     </section>
 
     <!-- Workshops -->
@@ -456,7 +719,14 @@
         class="ws-heading hm-heading"
         style="padding-top: 0; padding-bottom: 0"
       >
-        <video class='heading' preload autoplay muted loop style="border-radius: 100px">
+        <video
+          class="heading"
+          preload
+          autoplay
+          muted
+          loop
+          style="border-radius: 100px; margin-top: 0; margin-bottom: 0"
+        >
           <source src="img/workshop-heading.mkv" />
         </video>
       </div>
@@ -475,14 +745,14 @@
       <div class="ws-container item-wrap">
         <div class="ws-card-container">
           <a href="#workshop-01">
-            <div class="ws-card card1">
+            <div class="ws-card card1 item-wrap hoverables">
               <img src="img/ws-images/Marketing Objective.png" alt="" />
               <h3>How to secure your first 100 customers?</h3>
               <p class="plus-icon">+</p>
             </div>
           </a>
           <a href="#workshop-05">
-            <div class="ws-card card6 item-wrap">
+            <div class="ws-card card6 item-wrap hoverables">
               <img src="img/ws-images/venture.png" alt="" />
               <h3>Ad-Venture</h3>
             </div>
@@ -490,13 +760,13 @@
         </div>
         <div class="ws-card-container">
           <a href="#workshop-03">
-            <div class="ws-card card2 item-wrap">
+            <div class="ws-card card2 item-wrap hoverables">
               <img src="img/ws-images/networking.png" alt="" />
               <h3>Network makes your Net-worth</h3>
             </div>
           </a>
           <a href="#workshop-04">
-            <div class="ws-card card5 item-wrap">
+            <div class="ws-card card5 item-wrap hoverables">
               <img src="img/ws-images/nft.png" alt="" />
               <h3>Mint your First NFT</h3>
             </div>
@@ -507,212 +777,7 @@
             <img src="ws-images/Ellipse.png" alt="">
         </div> -->
       <div id="event-popup-container"></div>
-      <hr class="section-end" style="position: relative; top: -30px" />
-    </section>
-
-    <!-- Speakers  -->
-    <section id="speakers" style="padding-top: 0">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
-        <source src="bg-video/background.webm" />
-      </video>
-      <div class="sp-heading hm1-heading heading" style="padding-top: 0">
-        <img src="img/speaker-hd.png" alt="" />
-      </div>
-      <div class="sp-desc hm1-desc">
-        <p>
-          Entrepreneurs who have proved themselves as the mavericks will come to
-          share their success stories and ideology.
-        </p>
-      </div>
-      <div class="underline" style="margin-bottom: 50px"></div>
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <div class="sp-card card-1">
-              <div class="sp-image">
-                <img src="img/sp-images/sanjiv rangrass.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Sanjiv Rangrass</h3>
-                <h4>Group Head ITC | ITC Mafia</h4>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="slide">
-            <div class="sp-card card-2">
-              <div class="sp-image">
-                <img src="img/sp-images/rajiv batra.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Rajiv Batra</h3>
-              </div>
-            </div>
-          </div> -->
-          <div class="slide">
-            <div class="sp-card card-3">
-              <div class="sp-image">
-                <img src="img/sp-images/nishant.jpeg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Nishant Chandra</h3>
-                <h4>Founder Newton School</h4>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-4">
-              <div class="sp-image">
-                <img src="img/sp-images/Ajit balakrishnan.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Ajit Balakrishnan</h3>
-                <h4>CEO Rediff.com</h4>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="slide">
-            <div class="sp-card card-5">
-              <div class="sp-image">
-                <img src="img/sp-images/anupam garg.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Anupam Garg</h3>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/ravi purohit.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Ravi Purohit</h3>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/tausif ahmed.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Tausif Ahmed</h3>
-              </div>
-            </div>
-          </div> -->
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/kanika tekriwal.webp" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Kanika Tekriwal</h3>
-                <h4>CEO JETSETGO</h4>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/udita pal.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Udita Pal</h3>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/vidushi jain.webp" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Vidushi Jain</h3>
-              </div>
-            </div>
-           </div> -->
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/amit agarwal.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Amit Agarwal</h3>
-                <h4>Founder Nobroker</h4>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/vimal tiwari.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Vimal Tiwari</h3>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/mohit tandon.avif" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Mohit Tandon</h3>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/satanik roy.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Satanik Roy</h3>
-              </div>
-            </div>
-          </div> -->
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/dhruvan thaker.webp" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Dhruvan Thaker</h3>
-                <h4>Founder The Smart Taxi</h4>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/saurabh chandra.jpg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Saurabh Chandra</h3>
-                <h4>Retired Secretary Government of India</h4>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="sp-card card-6">
-              <div class="sp-image">
-                <img src="img/sp-images/sweta bajpai.jpeg" alt="" />
-              </div>
-              <div class="sp-speaker-name">
-                <h3>Sweta Bajpai</h3>
-                <h4>Vertical Head, India Meta</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="section-end" style="position: relative; top: 50px" />
-      </div>
-
-      <!-- <div class="sp-button">
-        <h3>VIEW ALL SPEAKERS</h3>
-        <img src="sp-images/arrow.png" alt="" />
-      </div> -->
+      <hr class="section-end" style="position: relative; top: 10px" />
     </section>
 
     <section class="quotes">
@@ -720,8 +785,8 @@
         <source src="bg-video/background.webm" />
       </video>
       <div class="carousel">
-        <button class="btn-arrow btn-arrow-left"><</button>
-        <button class="btn-arrow btn-arrow-right">></button>
+        <button class="btn-arrow btn-arrow-left hoverables"><</button>
+        <button class="btn-arrow btn-arrow-right hoverables">></button>
         <div class="inner">
           <ul class="container">
             <li class="slide slide-1">
@@ -762,7 +827,7 @@
         <div class="dots"></div>
       </div>
 
-      <button class="back-to-top">
+      <button class="back-to-top hoverables">
         Back to top
         <img
           src="img/Polygon 3.png"
@@ -776,23 +841,26 @@
         <source src="bg-video/background.webm" />
       </video>
       <div class="socials">
-        <a href="https://www.facebook.com/ecelliitk/"
+        <a href="https://www.facebook.com/ecelliitk/" class="hoverables"
           ><img src="img/icons/facebook.png" class="icon"
         /></a>
-        <a href="https://www.facebook.com/messages/t/143082049043150"
+        <a
+          href="https://www.facebook.com/messages/t/143082049043150"
+          class="hoverables"
           ><img src="img/icons/messenger.png" class="icon"
         /></a>
-        <a href="https://instagram.com/ecelliitk"
+        <a href="https://instagram.com/ecelliitk" class="hoverables"
           ><img src="img/icons/instagram.png" class="icon"
         /></a>
-        <a href="https://www.youtube.com/@ecelliitk"
+        <a href="https://www.youtube.com/@ecelliitk" class="hoverables"
           ><img src="img/icons/youtube.png" class="icon"
         /></a>
         <a
           href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kanpur/mycompany/"
+          class="hoverables"
           ><img src="img/icons/linkedin.png" class="icon"
         /></a>
-        <a href="https://twitter.com/ecelliitk"
+        <a href="https://twitter.com/ecelliitk" class="hoverables"
           ><img src="img/icons/twitter.png" class="icon"
         /></a>
       </div>
@@ -846,6 +914,14 @@
         <p>Entrepreneurship Cell, IIT Kanpur, Kanpur, Uttar Pradesh, 208016</p>
       </section>
     </section>
+
+    <div class="cursor">
+      <div class="cursor__ball">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
 
     <div id="preloader">
       <div id="loader">
