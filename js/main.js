@@ -160,7 +160,7 @@ dotsContainer.addEventListener("click", function (e) {
       </div>";
     }, 1000);
 
-    const $ball = document.querySelector(".cursor__ball")
+    const $ball = document.querySelector(".cursor__ball");
     // cursor binder
     document.body.addEventListener("mousemove", (e) => {
       TweenMax.to($ball, 0.4, {
@@ -175,13 +175,13 @@ dotsContainer.addEventListener("click", function (e) {
         TweenMax.to($ball, 0.3, {
           scale: 4,
         });
-        $ball.classList.add("ball_hovered")
+        $ball.classList.add("ball_hovered");
       });
       $hoverables[i].addEventListener("mouseleave", () => {
         TweenMax.to($ball, 0.3, {
           scale: 1,
         });
-        $ball.classList.remove("ball_hovered")
+        $ball.classList.remove("ball_hovered");
       });
     }
   });
@@ -278,3 +278,26 @@ dotsContainer.addEventListener("click", function (e) {
 // ScrollReveal().reveal('.comp-card, .ws-card', { delay: 600, origin: 'bottom', interval:100 });
 // ScrollReveal().reveal('.content .info img, .img1 img', { delay: 600, origin: 'right' });
 // ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});
+
+$(document).ready(function () {
+  var id = "#dialog";
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  $("#mask").css({ width: maskWidth, height: maskHeight });
+  $("#mask").fadeIn(500);
+  $("#mask").fadeTo("slow", 0.9);
+  var winH = $(window).height();
+  var winW = $(window).width();
+  $(id).css("top", winH / 2 - $(id).height() / 2);
+  $(id).css("left", winW / 2 - $(id).width() / 2);
+  $(id).fadeIn(2000);
+  $(".window .close").click(function (e) {
+    e.preventDefault();
+    $("#mask").hide();
+    $(".window").hide();
+  });
+  $("#mask").click(function () {
+    $(this).hide();
+    $(".window").hide();
+  });
+});
