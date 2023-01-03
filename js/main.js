@@ -60,6 +60,8 @@ $(".counter").counterUp({
 arrowBtnLeft.addEventListener("click", prevSlide);
 arrowBtnRight.addEventListener("click", nextSlide);
 
+setInterval(nextSlide, 3000)
+
 dotsContainer.addEventListener("click", function (e) {
   // if needed to work only on dots and not on dot container
   if (e.target.classList.contains("dot")) {

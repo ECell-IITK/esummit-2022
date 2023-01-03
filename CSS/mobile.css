@@ -145,7 +145,7 @@
 }
 
 .slider .slide {
-    width: 150px;
+    width: 200px;
 }
 
 @keyframes scroll {
@@ -154,13 +154,13 @@
     }
 
     100% {
-        transform: translateX(calc(-150px*4));
+        transform: translateX(calc(-200px*9));
     }
 }
 
 .slider .slide-track {
-    animation: scroll 10s linear infinite;
-    width: calc(150px*8);
+    animation: scroll 30s linear infinite;
+    width: calc(200px*18);
 }
 
 .quote {
