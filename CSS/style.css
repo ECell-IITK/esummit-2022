@@ -1885,16 +1885,34 @@ circle {
 }
 
 /* On-load modal */
-#mask {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-  background-color: #26262c;
+
+.notification {
   display: none;
+  position: fixed;
+  top: 100px;
+  right: -500px;
+  display: flex;
+  align-items: flex-start;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: white;
+  padding: 20px;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 50;
+  transition: 0.3s all;
 }
 
-#boxes button {
+.notification .cross {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.notification button {
   display: inline-block;
   font: 16px/30px "raleway-heavy", sans-serif;
   padding: 9px 16px;
@@ -1909,50 +1927,4 @@ circle {
   -webkit-appearance: none;
   -webkit-font-smoothing: inherit;
   border-radius: 3px;
-}
-
-#boxes .window {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 440px;
-  height: 850px;
-  display: none;
-  z-index: 9999;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-#boxes #dialog {
-  width: 450px;
-  height: auto;
-  padding: 10px 10px 10px 10px;
-  background-color: #ffffff;
-  font-size: 15pt;
-}
-
-.agree:hover {
-  background-color: #D1D1D1;
-}
-
-.popupoption:hover {
-  background-color: #D1D1D1;
-  color: green;
-}
-
-.popupoption2:hover {
-  color: red;
-}
-
-@media only screen and (max-width: 864px) {
-  #boxes #dialog {
-    width: 380px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #boxes #dialog {
-    width: 250px;
-  }
 }

@@ -60,7 +60,7 @@ $(".counter").counterUp({
 arrowBtnLeft.addEventListener("click", prevSlide);
 arrowBtnRight.addEventListener("click", nextSlide);
 
-setInterval(nextSlide, 3000)
+setInterval(nextSlide, 3000);
 
 dotsContainer.addEventListener("click", function (e) {
   // if needed to work only on dots and not on dot container
@@ -241,27 +241,6 @@ dotsContainer.addEventListener("click", function (e) {
       $(".dull").removeClass("active");
     }
   });
-
-  // window.addEventListener("scroll", () => {
-  //   const sections = document.querySelectorAll("section");
-  //   const scrollY = window.pageYOffset;
-
-  //   sections.forEach((current) => {
-  //     let sectionHeight = current.offsetHeight;
-  //     let sectionTop = current.offsetTop - 50;
-  //     let id = current.getAttribute("id");
-
-  //     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-  //       document
-  //         .querySelector(".navlinks ul li a[href*=" + id + "]")
-  //         .classList.add("active");
-  //     } else {
-  //       document
-  //         .querySelector(".navlinks ul li a[href*=" + id + "]")
-  //         .classList.remove("active");
-  //     }
-  //   });
-  // });
 })(jQuery);
 
 // ScrollReveal({
@@ -282,24 +261,19 @@ dotsContainer.addEventListener("click", function (e) {
 // ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});
 
 $(document).ready(function () {
-  var id = "#dialog";
-  var maskHeight = $(document).height();
-  var maskWidth = $(window).width();
-  $("#mask").css({ width: maskWidth, height: maskHeight });
-  $("#mask").fadeIn(500);
-  $("#mask").fadeTo("slow", 0.9);
-  var winH = $(window).height();
-  var winW = $(window).width();
-  $(id).css("top", winH / 2 - $(id).height() / 2);
-  $(id).css("left", winW / 2 - $(id).width() / 2);
-  $(id).fadeIn(2000);
-  $(".window .close").click(function (e) {
-    e.preventDefault();
-    $("#mask").hide();
-    $(".window").hide();
-  });
-  $("#mask").click(function () {
-    $(this).hide();
-    $(".window").hide();
-  });
+  setTimeout(
+    () => (document.querySelector(".notification").style.right = 0),
+    3000
+  );
+
+  setTimeout(
+    () => (document.querySelector(".notification").style.right = "-500px"),
+    15000
+  );
+
+  document
+    .querySelector(".notification .cross")
+    .addEventListener("click", (e) => {
+      document.querySelector(".notification").style.right = "-500px";
+    });
 });
