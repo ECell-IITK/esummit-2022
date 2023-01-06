@@ -357,7 +357,7 @@ arrPresent.push(
     pic: "img/sp-images/dilip asbe.jpg",
     designation: "Managing Director & CEO - NPCI",
     about:
-      "Ninad Karpe is a Partner at 100X.VC – a VC firm, which invests in early stage start-ups and has invested in 70 startups so far. It aims to invest in 100 startups every year. Karpe was the MD & CEO of Aptech Ltd. for more than seven years, till 2016. He previously served CA Technologies, a US headquartered leader in software products, as Managing Director of India. Karpe has authored a book on business strategies, titled “BOND to BABA”, which received rave reviews and was listed by Amazon in its prestigious list of “Memorable books of 2018”. He was the Chairman, Western Region of the Confederation of Indian Industries (CII) for 2017-18, an honorary position. Besides his day job as a VC, Karpe is passionate about supporting theatre and has produced two Marathi plays, which have received wide acclaim. An avid follower of F1 racing, he switches off his mobile phone during race days.",
+      "Mr. Dilip Asbe is the MD & CEO of National Payments Corporation of India (NPCI). Prior to this he was the Chief Operating Officer (COO) of NPCI. He has played a pivotal role in designing, building, and managing large scale innovative payments processing platforms like Unified Payments Interface (UPI), Bharat Interface for Money (BHIM), Immediate Payment Service (IMPS) and India’s homegrown card network RuPay.",
     id: "",
   },
   {
@@ -365,7 +365,7 @@ arrPresent.push(
     pic: "img/sp-images/ravi purohit.jpg",
     designation: "Vise President & India Head - Colortokens",
     about:
-      "Harsh is a storyteller by passion and a brand expert by profession. He curates real-world inspiring stories that help to establish a brand's distinct identity. An attractive identity makes a brand preferable in the market and drives growth.      Harsh has authored 3 books on brand building. His bestselling book series Booming Brands covering inspiring journeys of 22 new age 'Made in India' brands, is published by CNBC. It has been widely acclaimed by eminent academicians, Indian government leaders, entrepreneurs, and venture capitalists. His third book Booming Digital Stars, covering 11 inspiring journeys from 'India's Creator Economy,' has become a National Bestseller. He has also written over 80 articles for various business publications, including Forbes. ",
+      "Ravi Purohit plays an integral role in the organization’s operations, delivery services, and GTM strategy. Prior to ColorTokens, Ravi held multiple leadership roles over more than two decades at Wipro and demonstrated transformative leadership, superior results, and collaboration across global teams. Most recently, as a Global head of Wipro’s Oracle service line, he reoriented the service portfolio around customer needs such as enterprise process transformation, digital transformation, and cloud technology. He has led integrated services, solutions, demand generation, presales, and large multi-services deals and headed industry verticals in Retail, CPG, and Food and Beverage globally.",
     id: "",
   },
   {
@@ -373,11 +373,11 @@ arrPresent.push(
     pic: "img/sp-images/nishant.jpeg",
     designation: "Founder - Newton School",
     about:
-      "Anil Joshi is the Founder and Managing Partner at Unicorn India Ventures, a leading Venture Capital Fund focusing on early-stage investments in tech companies. With over two decades of experience in the field, Anil pioneered angel investments in India as the head of operations and President at Mumbai Angels, one of the most reputable and prolific Angel Investment forums in India. As an early mover in early 2000 in this segment, Anil was investing in budding companies even before venture investment had taken any formal shape in India. Within the start-up ecosystem, Anil has been at the helm of over 100 venture-financing deals. He serves on the board of several companies in the field of Fintech, Robotic, Meditech, IOT, Bigdata, SaaS and is involved with multiple incubation centres as a board member and mentor in India as well as internationally. Additionally, he also advices the government and industry bodies on start-ups regarding policy. Young entrepreneurs draw upon his vast experience for guidance and strategic direction for their own start-ups. As an accomplished public speaker with informed opinions about the sector, he is much sought after at start-up events both in the domestic and the international circuit. His speaking engagements have taken him to countries like Singapore, Malaysia, USA, Canada, China, France, Australia and the Middle East",
+      "He is the Co-Founder and CEO at Newton School, an EdTech platform that helps people improve their skills and become better software engineers. Prior to this he was the Co-Founder and CEO at Bolo.",
     id: "",
   },
   {
-    name: "Sweta Bajpai",
+    name: "Shweta Bajpai",
     pic: "img/sp-images/sweta bajpai.jpeg",
     designation: "Vertical Head - Meta India",
     about:
@@ -389,7 +389,7 @@ arrPresent.push(
     pic: "img/sp-images/kanika tekriwal.jpg",
     designation: "Founder - JetSetGo",
     about:
-      "Ranjith, an alum from Bangalore Institute of Technology, is the CEO and Co-founder at Stellapps Technologies. Earlier, he was the Practice Head at Wipro in the Communications domain. Ranjith is currently working on digitizing the dairy industry.",
+      "Kanika Tekriwal is an Indian entrepreneur who is serving as CEO of JetSetGo. She is the youngest richest woman in India. She founded India's first aircraft leasing organisation.She was not only chosen as one of the 100 most inspirational women in the world by BBC but also recognized by Forbes Asia as one of the 30 under 30 leading entrepreneurs in Asia amongst various other accolades.",
     id: "",
   },
   {
@@ -397,7 +397,7 @@ arrPresent.push(
     pic: "img/sp-images/amit agarwal.jpg",
     designation: "Founder - NoBroker",
     about:
-      "Mr. Vipin Pathak is the Co-founder and CEO of Care24. Mr. Vipin Pathak (BT/CE/2006) was honored with the Businessworld Young Entrepreneur Award. Founded in 2014, Care24 is not only one of India’s top home healthcare companies but also one of India’s pioneering venture capital-backed startups in this space.",
+      "A banking & finance veteran with over 15 years of experience in management consulting and strategy, Amit Kumar Agarwal is the Co-founder and CEO of NoBroker.com, the worldâ€™s largest peer-to-peer real estate portal. He is responsible for defining and guiding the overall vision and direction at NoBroker.com and spearheads the company corporate strategies. Amit is an alumnus of the Indian Institute of Technology, Kanpur. He was associated with the Management Consulting division of PricewaterhouseCoopersâ€™ Banking and Financial Services vertical.",
     id: "",
   },
   {
@@ -413,7 +413,7 @@ arrPresent.push(
     pic: "img/sp-images/gautam raj.jpeg",
     designation: "Founder - HubHopper",
     about:
-      "Tamanna Singh, is an Indian Business Woman, a President of India Awardee, Under 40 Top 40 business women awardee, a well-known mentor, motivational speaker, investor, philanthropist with over 20 yrs. Of experience. She is Founder and Managing Director of The Uberlux group of Companies .She along with her husband Col. Gautam Singh, formed UberLux in 2011, with the vision to pioneer the concept of affordable luxury in India. The company presently has seven brands under its wings .Recently, the company diversified its portfolio to foray into Real estate projects and exports in Australia. An MBA in HR & marketing, Tamanna also studied Cosmetology from Paris. She has conceptualized and executed a number of innovative brand management and global market entry strategies for some of the world’s best known brands as well as start-ups and entrepreneurs. She has also collaborated with leading thought leaders of Harvard Business School, Indian Institute of Management, Indian Institute of Technology and some other leading management institutes on case studies and teaching programmes. She contributes regularly for various articles for magazines, websites and papers on entrepreneurship. She is also a subject matter expert in Beauty, wellness, fashion, women entrepreneurship, scaling up businesses, negotiation skills, how to bootstrap your start-up, fund raising, pitch deck, etc. She has already empowered over 15,000 women through various platforms .Over the last 15 years she has been highly recognized and awarded both nationally and internationally for her work on women empowerment and upliftment.",
+      "He is the Founder & CEO of Hubhopper, India's largest podcast hosting, creation and distribution platform. He has been recognised as a member of the Forbes 30 Under 30 in Asia for media and technology (batch of 2018) and has been nominated on the Economic Times 40 Under 40 list. He was also awarded Entrepreneur of the Year for 2018 by Entrepreneur Magazine.",
     id: "",
   },
   {
@@ -421,16 +421,7 @@ arrPresent.push(
     pic: "img/sp-images/dhruvan thaker.jpg",
     designation: "Founder - Smart Taxi",
     about:
-      "Amar Nagaram is an Indian Business Executive. He was the chief executive officer (CEO) of Myntra.com, succeeding Ananth Narayanan in 2019. Before becoming CEO, he was the vice president of Flipkart Technology, responsible for building and running the consumer products. He is regarded as one of the very vocal voices on technology and its role in modern business.",
-    id: "",
-  },
-
-  {
-    name: "Shawrta Mehrotra",
-    pic: "img/sp-images/shawrya mehrotra.jpg",
-    designation: "Founder - Metvy",
-    about:
-      "Alok Bansal is the Whole-time Director & CFO, PB Fintech Limited that owns India’s leading insurtech brand Policybazaar.com & leading lending marketplace Paisabazaar.com. He heads various functions including corporate finance and controllership, tax, treasury, strategic planning, and analytics. He firmly believes that the primary responsibility of a CFO is to accomplish business goals rather than just concentrating on functional goals. According to him, the success of any business lies in working with a team with different mindsets, allowing them the flexibility and freedom to experiment, innovate and contribute. Alok’s core strengths lie in strategic thinking, process control, and execution. Prior to joining PolicyBazaar.com, Alok has worked in various cross-functional leadership roles with Mahindra & Mahindra, iGate Global Solutions and GE. He was recognized as one of the top 100 CFOs in the country by the CFO India Magazine in 2016. Alok has a special interest in science and technology, economic empowerment, education and civil rights.",
+      "Mr. Dhruvam is a risk-taking and self-motivated individual who started his own business –a bootstrapped venture ‘The SMART Taxi,’ which aims to become India’s ranked 1 cab-service in terms of customer satisfaction. Along with a degree in Business Administration and skills which he learned during his education; his professional experiences also helped him establish his start-up.",
     id: "",
   },
 
@@ -439,7 +430,7 @@ arrPresent.push(
     pic: "img/sp-images/satanik roy.jpg",
     designation: "Founder - HyperXCharge",
     about:
-      "Niranjan Gupta is CFO at Hero Motocorp Limited and plays Senior leadership roles in finance and procurement , covering a wide range from start up businesses ( water purifier in HUL ) to large scale established categories ( Home & personal care ) , and covering both local and global responsibilities. Width of experience covers wide ranging finance roles ; P/L balance sheet management, acquisitions and disposals, setting up financially viable models for start ups, driving financial metrics/performance in business and controls & governance. Experience in procurement has given deep understanding of supply chain, and external market forces which influence business performance; a crucial element for a modern day CFO.",
+      "Satankik Roy is the co-founder of the startup that is bringing the next 500 million to 1 billion Indians over the Internet affordably – HyperXchange – recognized by the premier Indian government incubation hub ‘IIM – Calcutta (Innovation Park)’ through its department of Science & Technology and raised investment technology Investmentfrom ‘Microsoft’ and several other industry leaders valued at over a million dollars.",
     id: "",
   },
 
@@ -448,7 +439,7 @@ arrPresent.push(
     pic: "img/sp-images/ashish sinha.jpeg",
     designation: "Founder - NextBigWhat.com",
     about:
-      "Saket Modi is an entrepreneur, co-founder and CEO of Safe Security, a cybersecurity and digital business risk quantification company, based out of Palo Alto, California.",
+      "In 2009, Ashish Sinha founded plugged.in as a hobby to assist the growing tech talent and innovative companies that are on the rise in India. Today, NextBigWhat has grown to become an active community of Indian startups, community of founders, CXOs and Product Marketers.",
     id: "",
   },
 
@@ -457,7 +448,7 @@ arrPresent.push(
     pic: "img/sp-images/vidushi jain.jpg",
     designation: "Founder - Attrangi",
     about:
-      "The founder and CEO of GeeksforGeeks, a widely popular computer science portal created by geeks, for geeks. A postgraduate from IIT Roorkee, he has worked at D.E Shaw and Co., and at JIIT Noida as an assistant professor. His passion for imparting quality and affordable programming knowledge and a vision to build a gigantic network of geeks has helped GeeksforGeeks mark its incredible presence in the e-learning world, helping innumerable students and coding enthusiasts build a successful career in the tech world.",
+      "Vidushi is the Co-founder of Attrangi – a leading jewellery brand in India. She heads the financials & operations for the company. Before her entrepreneurial stint– Vidushi has worked with Book My Show and Kataria Honda. She loves dancing and travelling & is a big movie buff. She has also done an MBA in Marketing and Advertising.",
     id: "",
   },
 
@@ -466,7 +457,7 @@ arrPresent.push(
     pic: "img/sp-images/adit palicha.jpg",
     designation: "Founder & CEO - Zepto",
     about:
-      "Tapan Singhel has a rich experience of over 30 years in the insurance industry. He is one of the founding members of Bajaj Allianz General Insurance and has been with the Company for over 20 years. As its MD & CEO for close to 10 years, Tapan has built the organisation to where it is today with close to 11 crore customers and a wide distribution network spanning across more than 1,000 locations across the country. Customer obsession and passion to do good for the people are what drives Tapan and his success in the industry. Under his aegis, the Company has been recognised as one of the best in Asia. An avid social media influencer, Tapan has over 6.8 lakh followers on LinkedIn and has been recognised as the LinkedIn’s Top Voice in India in both 2018 and 2019. He also chairs the CII National Committee on Insurance and Pensions. He recently won the ‘Lifetime Achievement Award’ at the 25 th Asia Insurance Industry Awards 2021. He has also been honoured as the ‘Personality of the Year’ at Quantic’s BFSI Excellence Awards 2021, India Insurance Summit & Awards 2019, 22nd Asia Insurance Industry Awards 2018 and Indian Insurance Summit 2017 and the ‘Most Promising Business Leader’ of Asia at The Economic Times Global Business Summit 2018. He has also won ‘CEO of the Year’ for India and Asia-Pacific region at the IDC Future Enterprise Awards 2021, 3 rd Annual Insurance India Summit & Awards 2018 and Insurance Asia Awards.",
+      "Aadit Palicha is the CEO and co-founder of the famous delivery app Zepto. He started his first startup GoPool at the age of 17. He is also the founder of the company PryvaSee, an AI project that summarises privacy policies.",
     id: "",
   },
   {
@@ -474,7 +465,7 @@ arrPresent.push(
     pic: "img/sp-images/prathammittal.jpg",
     designation: "Founder at Masters’ Union",
     about:
-      "Tapan Singhel has a rich experience of over 30 years in the insurance industry. He is one of the founding members of Bajaj Allianz General Insurance and has been with the Company for over 20 years. As its MD & CEO for close to 10 years, Tapan has built the organisation to where it is today with close to 11 crore customers and a wide distribution network spanning across more than 1,000 locations across the country. Customer obsession and passion to do good for the people are what drives Tapan and his success in the industry. Under his aegis, the Company has been recognised as one of the best in Asia. An avid social media influencer, Tapan has over 6.8 lakh followers on LinkedIn and has been recognised as the LinkedIn’s Top Voice in India in both 2018 and 2019. He also chairs the CII National Committee on Insurance and Pensions. He recently won the ‘Lifetime Achievement Award’ at the 25 th Asia Insurance Industry Awards 2021. He has also been honoured as the ‘Personality of the Year’ at Quantic’s BFSI Excellence Awards 2021, India Insurance Summit & Awards 2019, 22nd Asia Insurance Industry Awards 2018 and Indian Insurance Summit 2017 and the ‘Most Promising Business Leader’ of Asia at The Economic Times Global Business Summit 2018. He has also won ‘CEO of the Year’ for India and Asia-Pacific region at the IDC Future Enterprise Awards 2021, 3 rd Annual Insurance India Summit & Awards 2018 and Insurance Asia Awards.",
+      "Pratham Mittal is the Founderoft Masters' Union - a unique practitioner-led higher education institution, where courses are taught by CXOs from Morgan Stanley, Tata, StanChart, Google, Twitter, Reliance, Razorpay, etc. He attended the University of Pennsylvania and previously cofounded Outgrow.co, an interactive content platform used by top agencies and Fortune 500 companies.",
     id: "",
   },
   {
@@ -482,7 +473,7 @@ arrPresent.push(
     pic: "img/sp-images/Shutapa-Paul.jpg",
     designation: "Founder - Dharma Media Consultants",
     about:
-      "Tapan Singhel has a rich experience of over 30 years in the insurance industry. He is one of the founding members of Bajaj Allianz General Insurance and has been with the Company for over 20 years. As its MD & CEO for close to 10 years, Tapan has built the organisation to where it is today with close to 11 crore customers and a wide distribution network spanning across more than 1,000 locations across the country. Customer obsession and passion to do good for the people are what drives Tapan and his success in the industry. Under his aegis, the Company has been recognised as one of the best in Asia. An avid social media influencer, Tapan has over 6.8 lakh followers on LinkedIn and has been recognised as the LinkedIn’s Top Voice in India in both 2018 and 2019. He also chairs the CII National Committee on Insurance and Pensions. He recently won the ‘Lifetime Achievement Award’ at the 25 th Asia Insurance Industry Awards 2021. He has also been honoured as the ‘Personality of the Year’ at Quantic’s BFSI Excellence Awards 2021, India Insurance Summit & Awards 2019, 22nd Asia Insurance Industry Awards 2018 and Indian Insurance Summit 2017 and the ‘Most Promising Business Leader’ of Asia at The Economic Times Global Business Summit 2018. He has also won ‘CEO of the Year’ for India and Asia-Pacific region at the IDC Future Enterprise Awards 2021, 3 rd Annual Insurance India Summit & Awards 2018 and Insurance Asia Awards.",
+      "She is the Founder at Dharma Media Consultants, Providing complete media solutions from content writing and social media management to internal/external communication and product placement and strategy. She has won several awards like Sattva Nation’s Iconic Wellness Award (2021), ‘Woman of the Year in Media and Journalism’ by Woman Times (2019) , and  ‘100 Women Faces’ by the Confederation of Women Entrepreneurs (2018).",
     id: "",
   },
   {
@@ -490,7 +481,7 @@ arrPresent.push(
     pic: "img/sp-images/jivraj singh.jpg",
     designation: "Venture Operations - AngelList India",
     about:
-      "Tapan Singhel has a rich experience of over 30 years in the insurance industry. He is one of the founding members of Bajaj Allianz General Insurance and has been with the Company for over 20 years. As its MD & CEO for close to 10 years, Tapan has built the organisation to where it is today with close to 11 crore customers and a wide distribution network spanning across more than 1,000 locations across the country. Customer obsession and passion to do good for the people are what drives Tapan and his success in the industry. Under his aegis, the Company has been recognised as one of the best in Asia. An avid social media influencer, Tapan has over 6.8 lakh followers on LinkedIn and has been recognised as the LinkedIn’s Top Voice in India in both 2018 and 2019. He also chairs the CII National Committee on Insurance and Pensions. He recently won the ‘Lifetime Achievement Award’ at the 25 th Asia Insurance Industry Awards 2021. He has also been honoured as the ‘Personality of the Year’ at Quantic’s BFSI Excellence Awards 2021, India Insurance Summit & Awards 2019, 22nd Asia Insurance Industry Awards 2018 and Indian Insurance Summit 2017 and the ‘Most Promising Business Leader’ of Asia at The Economic Times Global Business Summit 2018. He has also won ‘CEO of the Year’ for India and Asia-Pacific region at the IDC Future Enterprise Awards 2021, 3 rd Annual Insurance India Summit & Awards 2018 and Insurance Asia Awards.",
+      "Jivraj Singh Sachar’s podcast, Indian Silicon Valley, has ranked among Spotify’s Top 10 business podcasts in India. It also made the rankings in 10 other countries besides India. He started the Indian Silicon Valley podcast when he was 21 because he wanted to build a content repository for people his age, who aspired to build a business. ",
     id: "",
   },
   {
@@ -498,7 +489,7 @@ arrPresent.push(
     pic: "img/sp-images/lipi goyal.jpg",
     designation: "Independent Artist - Roasted Beanz Production",
     about:
-      "Tapan Singhel has a rich experience of over 30 years in the insurance industry. He is one of the founding members of Bajaj Allianz General Insurance and has been with the Company for over 20 years. As its MD & CEO for close to 10 years, Tapan has built the organisation to where it is today with close to 11 crore customers and a wide distribution network spanning across more than 1,000 locations across the country. Customer obsession and passion to do good for the people are what drives Tapan and his success in the industry. Under his aegis, the Company has been recognised as one of the best in Asia. An avid social media influencer, Tapan has over 6.8 lakh followers on LinkedIn and has been recognised as the LinkedIn’s Top Voice in India in both 2018 and 2019. He also chairs the CII National Committee on Insurance and Pensions. He recently won the ‘Lifetime Achievement Award’ at the 25 th Asia Insurance Industry Awards 2021. He has also been honoured as the ‘Personality of the Year’ at Quantic’s BFSI Excellence Awards 2021, India Insurance Summit & Awards 2019, 22nd Asia Insurance Industry Awards 2018 and Indian Insurance Summit 2017 and the ‘Most Promising Business Leader’ of Asia at The Economic Times Global Business Summit 2018. He has also won ‘CEO of the Year’ for India and Asia-Pacific region at the IDC Future Enterprise Awards 2021, 3 rd Annual Insurance India Summit & Awards 2018 and Insurance Asia Awards.",
+      "Lipi Goyal is an award winning anchor, podcaster, actor & public speaking coach who has anchored 1500+ shows live & virtually around the globe. A certified Public Speaker from University of Washington, Lipi owns a rich repertoire of skills to spell-bind audiences.",
     id: "",
   }
 );

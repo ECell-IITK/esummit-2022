@@ -154,13 +154,13 @@
     }
 
     100% {
-        transform: translateX(calc(-200px*28));
+        transform: translateX(calc(-200px*26));
     }
 }
 
 .slider .slide-track {
     animation: scroll 40s linear infinite;
-    width: calc(200px*24);
+    width: calc(200px*22);
 }
 
 .quote {

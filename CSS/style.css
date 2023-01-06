@@ -718,7 +718,7 @@ a[href="#workshop-01"] .ws-card::before {
   }
 
   100% {
-    transform: translateX(calc(-350px * 19));
+    transform: translateX(calc(-350px * 18));
   }
 }
 
@@ -764,7 +764,7 @@ a[href="#workshop-01"] .ws-card::before {
 .slider .slide-track {
   animation: scroll1 40s linear infinite;
   display: flex;
-  width: calc(350px*24);
+  width: calc(350px*22);
   animation-iteration-count: infinite;
   overflow-x: visible;
 }
