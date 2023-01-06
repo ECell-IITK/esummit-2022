@@ -150,17 +150,17 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(100px);
     }
 
     100% {
-        transform: translateX(calc(-200px*9));
+        transform: translateX(calc(-200px*28));
     }
 }
 
 .slider .slide-track {
-    animation: scroll 30s linear infinite;
-    width: calc(200px*18);
+    animation: scroll 40s linear infinite;
+    width: calc(200px*24);
 }
 
 .quote {

@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/vendor.css" />
     <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/modal.css" />
     <link rel="shortcut icon" href="img/E_Cell_Logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -53,7 +54,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@700&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -104,7 +105,7 @@
     </div>
     <nav class="navbar background navback hnavresp">
       <a href="/"
-        ><img src="img/E_Cell_Logo.png" alt="" class="src" style="width: 50px"
+        ><img src="img/E Cell Logo E Summit White.png" alt="" class="src"
       /></a>
       <div class="navlinks navlist vclassresp">
         <ul>
@@ -130,6 +131,62 @@
         <div class="line"></div>
       </div>
     </nav>
+
+    <div id="boxes">
+      <div
+        style="
+          top: 50%;
+          left: 50%;
+          display: none;
+          background: black;
+          overflow: visible;
+        "
+        id="dialog"
+        class="window"
+      >
+        <div id="san" style="overflow: visible">
+          <a href="#" class="close agree"
+            ><img
+              src="img/close-icon.png"
+              width="35"
+              style="
+                float: right;
+                margin-right: -25px;
+                margin-top: -20px;
+                overflow: visible;
+              "
+          /></a>
+          <img src="img/E Cell Logo E Summit White.png" width="400" />
+          <h3
+            style="
+              color: white;
+              font-family: 'Roboto';
+              width: 80%;
+              text-align: center;
+              margin: 20px auto;
+            "
+          >
+            Chance to win Exciting Goodies by filling the form below
+          </h3>
+          <button style="background: #ff2929; font-size: 18px">
+            <a href="https://forms.gle/ADy3n3sVjQFUxm1j8" target="_blank"
+              >Fill Form</a
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
 
     <div class="notification">
       <h2 style="font-family: 'Roboto'; margin-bottom: 20px">
@@ -337,18 +394,18 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Sweta Bajpai</h3>
-                <h4>Vertical Head, India Meta</h4>
+                <h4>Vertical Head - India Meta</h4>
               </div>
             </div>
           </div>
-          <!-- <div class="slide">
+          <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/vidushi jain.webp" alt="" />
+                <img src="img/sp-images/vidushi jain.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Vidushi Jain</h3>
-                <h4>CoFounder Attrangi</h4>
+                <h4>CoFounder - Attrangi</h4>
               </div>
             </div>
           </div>
@@ -360,10 +417,10 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Ashneer Grover</h3>
-                <h4>Founder BharatPe</h4>
+                <h4>Founder - BharatPe</h4>
               </div>
             </div>
-          </div> -->
+          </div>
           <div class="slide">
             <div class="sp-card card-1">
               <div class="sp-image">
@@ -386,7 +443,7 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <!-- <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
                 <img src="img/sp-images/sandeep aggarwal.jpeg" alt="" />
@@ -396,7 +453,7 @@
                 <h4>Founder Droom & ShopClues</h4>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
@@ -411,11 +468,11 @@
           <div class="slide">
             <div class="sp-card card-2">
               <div class="sp-image">
-                <img src="img/sp-images/prakash kumar.jpg" alt="" />
+                <img src="img/sp-images/ved maani.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
-                <h3>Prakash Kumar</h3>
-                <h4>Chief Executive Officer at Wadhwani Institute</h4>
+                <h3>Ved Mani Tiwari</h3>
+                <h4>Chief Executive Officer at NSDC</h4>
               </div>
             </div>
           </div>
@@ -426,7 +483,7 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Nishant Chandra</h3>
-                <h4>Founder Newton School</h4>
+                <h4>Founder - Newton School</h4>
               </div>
             </div>
           </div>
@@ -437,14 +494,14 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Amit Agarwal</h3>
-                <h4>Founder Nobroker</h4>
+                <h4>Founder - Nobroker</h4>
               </div>
             </div>
           </div>
           <div class="slide">
             <div class="sp-card card-4">
               <div class="sp-image">
-                <img src="img/sp-images/gautam raj anand.webp" alt="" />
+                <img src="img/sp-images/gautam raj anand.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Gautam Raj Anand</h3>
@@ -455,18 +512,18 @@
           <div class="slide">
             <div class="sp-card card-4">
               <div class="sp-image">
-                <img src="img/sp-images/Ajit balakrishnan.jpg" alt="" />
+                <img src="img/sp-images/dilip asbe.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
-                <h3>Ajit Balakrishnan</h3>
-                <h4>CEO Rediff.com</h4>
+                <h3>Dilip Asbe</h3>
+                <h4>Managing Director & CEO - NPCI</h4>
               </div>
             </div>
           </div>
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/kanika tekriwal.webp" alt="" />
+                <img src="img/sp-images/kanika tekriwal.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Kanika Tekriwal</h3>
@@ -510,6 +567,17 @@
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
+                <img src="img/sp-images/prathammittal.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Pratham Mittal</h3>
+                <h4>Founder - Masters' Union</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
                 <img src="img/sp-images/shawrya mehrotra.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
@@ -543,11 +611,55 @@
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/dhruvan thaker.webp" alt="" />
+                <img src="img/sp-images/adit palicha.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Aadit Palicha</h3>
+                <h4>Founder & CEO - Zepto</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/dhruvan thaker.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Dhruvam Thaker</h3>
                 <h4>Founder - Smart Taxi</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/jivraj singh.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Jivraj Singh Sachar</h3>
+                <h4>Founder & CEO - Zepto</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/Shutapa-Paul.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Shutapa Paul</h3>
+                <h4>Founder - Dharma Media Consultants</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/lipi goyal.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Lipi Goyal</h3>
+                <h4>Independent Artist</h4>
               </div>
             </div>
           </div>

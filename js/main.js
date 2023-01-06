@@ -261,19 +261,44 @@ dotsContainer.addEventListener("click", function (e) {
 // ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});
 
 $(document).ready(function () {
-  setTimeout(
-    () => (document.querySelector(".notification").style.right = 0),
-    3000
-  );
-
-  setTimeout(
-    () => (document.querySelector(".notification").style.right = "-500px"),
-    15000
-  );
-
-  document
-    .querySelector(".notification .cross")
-    .addEventListener("click", (e) => {
-      document.querySelector(".notification").style.right = "-500px";
+  $(document).one("scroll", () => {
+    var id = "#dialog";
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $("#mask").css({ width: maskWidth, height: maskHeight });
+    $("#mask").fadeIn(500);
+    $("#mask").fadeTo("slow", 0.9);
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css("top", winH / 2 - $(id).height() / 2);
+    $(id).css("left", winW / 2 - $(id).width() / 2);
+    $(id).fadeIn(2000);
+    $(".window .close").click(function (e) {
+      e.preventDefault();
+      $("#mask").hide();
+      $(".window").hide();
     });
+    $("#mask").click(function () {
+      $(this).hide();
+      $(".window").hide();
+    });
+  });
 });
+
+// $(document).ready(function () {
+//   setTimeout(
+//     () => (document.querySelector(".notification").style.right = 0),
+//     3000
+//   );
+
+//   setTimeout(
+//     () => (document.querySelector(".notification").style.right = "-500px"),
+//     15000
+//   );
+
+//   document
+//     .querySelector(".notification .cross")
+//     .addEventListener("click", (e) => {
+//       document.querySelector(".notification").style.right = "-500px";
+//     });
+// });
