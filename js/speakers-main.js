@@ -469,6 +469,14 @@ arrPresent.push(
     id: "",
   },
   {
+    name: "Divya Gandotra Tandon",
+    pic: "img/sp-images/divya gandotra.jpg",
+    designation: "Director - Scoop Beats Private Limited",
+    about:
+      "Divya Gandotra Tandon is a young entrepreneur, and an influential figure. Divya Gandotra Tandon has worked for more than 500 individual stars, influencers, and companies. Divya is the Director of Scoop Beats Pvt Ltd, COO at ASTNT Technologies Pvt Ltd, Designated Partner of Soulbeats Studio LLP and Member of Media Advisory Board at Krypto.",
+    id: "",
+  },
+  {
     name: "Shutapa Paul",
     pic: "img/sp-images/Shutapa-Paul.jpg",
     designation: "Founder - Dharma Media Consultants",
