@@ -612,7 +612,7 @@ a[href="#workshop-05"] .ws-card::before {
   background-image: url('../img/ws-images/marketing.png');
 }
 
-a[href="#workshop-01"] .ws-card::before {
+a[href="#workshop-02"] .ws-card::before {
   background-image: url('../img/ws-images/customers.png');
   background-blend-mode: color-burn;
   background-color: #bb897f;
@@ -797,6 +797,23 @@ a[href="#workshop-01"] .ws-card::before {
 #speakers {
   background-color: rgb(0, 0, 0, 0.5);
   position: relative;
+}
+
+#speakers button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.3s all;
+  margin-top: 40px;
+  font-size: large;
+  background: red;
+  color: white
+}
+
+#speakers button:hover {
+  background-color: #e84242;
 }
 
 
@@ -1712,11 +1729,6 @@ circle {
   fill: #656565;
   opacity: 0.8;
 }
-
-.ball_hovered {
-  mix-blend-mode: overlay;
-}
-
 /*14. Past Speakers and Sponsors
 -------------------------------------------------------------------------------*/
 
@@ -2030,9 +2042,7 @@ circle {
   margin-bottom: 10px;
 }
 
-#boxes button:hover {
-
-}
+#boxes button:hover {}
 
 #boxes #dialog {
   width: 450px;
