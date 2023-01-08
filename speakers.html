@@ -68,6 +68,32 @@
   <body>
     <div
       style="
+        background-color: rgb(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      "
+    >
+      <video
+        autoplay
+        muted
+        loop
+        class="video-bg"
+        style="
+          opacity: 0.4;
+          width: auto;
+          height: auto;
+          min-height: 100vw;
+          min-height: 100vh;
+        "
+      >
+        <source src="bg-video/background.webm" />
+      </video>
+    </div>
+    <div
+      style="
         background-color: rgb(0, 0, 0, 0.8);
         width: 100vw;
         height: 100vh;
@@ -162,10 +188,7 @@
       </div>
     </nav>
 
-    <section id="home">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
-        <source src="bg-video/background.webm" />
-      </video>
+    <section id="home" style="z-index: 100; position: relative">
       <div class="homepage">
         <div class="home-main">
           <img class="" src="img/e summit logo brown.png" alt="" />
@@ -223,9 +246,9 @@
       id="all-speakers-present"
       style="position: relative; background-color: rgb(0, 0, 0, 0.6)"
     >
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
 
       <div class="eve-heading heading" style="margin-bottom: 50px !important">
         <img src="img/speakers-page-heading.png" />
@@ -245,9 +268,9 @@
         display: none;
       "
     >
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
 
       <div class="eve-heading heading" style="margin-bottom: 50px">
         <img src="img/speakers-page-heading.png" />
@@ -258,9 +281,9 @@
     </section>
 
     <section class="quotes" style="display: none">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="carousel">
         <button class="btn-arrow btn-arrow-left" class="hoverables"><</button>
         <button class="btn-arrow btn-arrow-right" class="hoverables">></button>
@@ -314,9 +337,9 @@
     </section>
 
     <section class="footer" style="padding-bottom: 0">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="socials">
         <a href="https://www.facebook.com/ecelliitk/" class="hoverables"
           ><img src="img/icons/facebook.png" class="icon"
