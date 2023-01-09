@@ -59,6 +59,14 @@ spons.push(
     id: "",
   },
   {
+    name: "SBI Bank",
+    pic: "img/sponsors/sbi.png",
+    cat: "Banking Partner",
+    url: "https://www.onlinesbi.sbi/",
+    id: "",
+  },
+  
+  {
     name: "StockGro",
     pic: "img/sponsors/stockgro.png",
     cat: "Crypto Craze Presented By",
@@ -77,6 +85,13 @@ spons.push(
     pic: "img/sponsors/ims.png",
     cat: "Career Partner",
     url: "https://www.imsindia.com/center/kanpur/",
+    id: "",
+  },
+  {
+    name: "Nihkan",
+    pic: "img/sponsors/nihkan.png",
+    cat: "Corporate Gifting Partner",
+    url: "https://nihkan.in/",
     id: "",
   },
   {
@@ -119,13 +134,6 @@ spons.push(
     pic: "img/sponsors/fujifilm.svg",
     cat: "Official Gifting Partner",
     url: "https://global.fujifilm.com/en/",
-    id: "",
-  },
-  {
-    name: "Nihkan",
-    pic: "img/sponsors/nihkan.png",
-    cat: "Official Gifting Partner",
-    url: "https://nihkan.in/",
     id: "",
   },
   {
