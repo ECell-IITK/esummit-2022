@@ -144,6 +144,13 @@ spons.push(
     id: "",
   },
   {
+    name: "m Caffeine",
+    pic: "img/sponsors/mcaffeine.avif",
+    cat: "Special Skin Care Gifting Partner",
+    url: "https://lilgoodness.com/",
+    id: "",
+  },
+  {
     name: "Attrangi",
     pic: "img/sponsors/attrangi.avif",
     cat: "Official Gifting Partner",
