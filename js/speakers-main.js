@@ -28,7 +28,7 @@ arr.push(
     name: "Amit Agarwal",
     pic: "img/present/amitAgarwal.jpg",
     about:
-      "A banking & finance veteran with over 15 years of experience in management consulting and strategy, Amit Kumar Agarwal is the Co-founder and CEO of NoBroker.com, the world’s largest peer-to-peer real estate portal. He is responsible for defining and guiding the overall vision and direction at NoBroker.com and spearheads the company’s corporate strategies. Amit is an alumnus of the Indian Institute of Technology, Kanpur, and IIM, Ahmedabad. He was associated with the Management Consulting division of PricewaterhouseCoopers’ Banking and Financial Services vertical. He worked with many leading Indian and foreign banks during his eight years at PwC, leading consulting teams and working directly with top CXOs on critical aspects such as formulating business strategy and enhancing on-ground profitability.",
+      "A banking & finance veteran with over 15 years of experience in management consulting and strategy, Amit Kumar Agarwal is the Co-founder and CEO of NoBroker.com, the largest peer-to-peer real estate portal. He is responsible for defining and guiding the overall vision and direction at NoBroker.com and spearheads the company’s corporate strategies. Amit is an alumnus of the Indian Institute of Technology, Kanpur, and IIM, Ahmedabad. He was associated with the Management Consulting division of PricewaterhouseCoopers' Banking and Financial Services vertical.",
     id: "",
   },
   {
@@ -373,7 +373,7 @@ arrPresent.push(
     pic: "img/sp-images/sweta bajpai.jpeg",
     designation: "Vertical Head - Finserv, Media, Travel Meta India",
     about:
-      "Aman Dhall is founder of award-winning global integrated communications consultancy, CommsCredible. Through his venture, Aman is trying to build mutual trust within the corporate and media community, by curating stories that matter for the ecosystem. In his last role, he was the story maker in chief for world’s most valued insurtech brand Policybazaar.com. He led their storytelling in their business journey from valuation of $100 Mn in 2014 to over $2bn in 2020.In 2019, Exchange4Media recognised Aman among India's most influential gamechangers in the corporate communications and PR field.  He has also been identified as India's best young talent from the field of marketing, advertising, public relations, and media, in various ‘40 under 40’ lists by media houses.Aman is an alumnus of Delhi University and Loughborough University, UK. He has been a sportsperson and a journalist early in his career.",
+      "Shweta Bajpai is a global leader deeply embedded in the digital media landscape with experience spanning the value chain focused on digital influence, digital marketing and extensive experience on strategy for maximizing value created from leveraging complex digital products. Passion areas are coaching and mentoring people with a dedicated focus on expanding opportunities for first generation women professionals.",
     id: "",
   },
   {
@@ -389,15 +389,15 @@ arrPresent.push(
     pic: "img/sp-images/amit agarwal.jpg",
     designation: "Founder - NoBroker",
     about:
-      "A banking & finance veteran with over 15 years of experience in management consulting and strategy, Amit Kumar Agarwal is the Co-founder and CEO of NoBroker.com, the worldâ€™s largest peer-to-peer real estate portal. He is responsible for defining and guiding the overall vision and direction at NoBroker.com and spearheads the company corporate strategies. Amit is an alumnus of the Indian Institute of Technology, Kanpur. He was associated with the Management Consulting division of PricewaterhouseCoopersâ€™ Banking and Financial Services vertical.",
+      "A banking & finance veteran with over 15 years of experience in management consulting and strategy, Amit Kumar Agarwal is the Co-founder and CEO of NoBroker.com, the world's largest peer-to-peer real estate portal. He is responsible for defining and guiding the overall vision and direction at NoBroker.com and spearheads the company corporate strategies. Amit is an alumnus of the Indian Institute of Technology, Kanpur. He was associated with the Management Consulting division of PricewaterhouseCoopers' Banking and Financial Services vertical.",
     id: "",
   },
   {
-    name: "Shiva Kumar RV",
+    name: "Shiva Kumar R V",
     pic: "img/sp-images/shiva kumar.jpeg",
     designation: "Deputy Chief of Technology - NPCI",
     about:
-      "Priya Prakash is a healthcare entrepreneur and the Founder and CEO of HealthSetGo. HealthSetGo is India's largest healthcare organisation for school with the vision to establish India's largest network of health promoting schools. HealthSetGo currently operates in over 77 cities across India with 250,000+ students and parents with it’s flagship program CARE which monitors the healthy growth of students at School and generates Intelligent insights for Parents to empower them to take care of their child’s health as well as impart the right Health Education customised to the age of the child. Priya is a Delhi State Level Weightlifter, Tedx Speaker, Crossfit L1 Trainer , and an avid health blogger. She was honoured as Forbes Under 30 Asia 2018 in Healthcare and Sciences and awarded the Unilever Young Entreprenuer of the Year in 2018.",
+      "Shiva kumar R V is the Deputy Chief of Technology at NPCI, a passionate professional in Information Security field with a solid career track of 12+ years. Inclined for the latest emerging Security Threats and mitigating them in a logical manner making the platforms highly secure.",
     id: "",
   },
   {
