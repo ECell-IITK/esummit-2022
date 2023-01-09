@@ -331,7 +331,7 @@ arrPresent.push(
   {
     name: "Saurabh Chandra",
     pic: "img/sp-images/saurabh chandra.jpg",
-    designation: "Retired Secretary Government of India",
+    designation: "Retired Secretary to Government of India",
     about:
       "Mr. Saurabh Chandra, a Distinguished Alumnus graduated in Electrical Engineering from the Indian Institute of Technology, Kanpur. He retired from the post of Secretary, Government of India, Ministry of Petroleum and Natural Gas. Prior to that, he was Secretary of the Department of Industrial Policy and Promotion, Ministry of Commerce and Industry, Government of India.",
     id: "",
