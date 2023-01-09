@@ -355,7 +355,7 @@ arrPresent.push(
   {
     name: "Ravi Purohit",
     pic: "img/sp-images/ravi purohit.jpg",
-    designation: "Vise President & India Head - Colortokens",
+    designation: "Vice President & India Head - Colortokens",
     about:
       "Ravi Purohit plays an integral role in the organization’s operations, delivery services, and GTM strategy. Prior to ColorTokens, Ravi held multiple leadership roles over more than two decades at Wipro and demonstrated transformative leadership, superior results, and collaboration across global teams. Most recently, as a Global head of Wipro’s Oracle service line, he reoriented the service portfolio around customer needs such as enterprise process transformation, digital transformation, and cloud technology. He has led integrated services, solutions, demand generation, presales, and large multi-services deals and headed industry verticals in Retail, CPG, and Food and Beverage globally.",
     id: "",
@@ -403,7 +403,7 @@ arrPresent.push(
   {
     name: "Gautam Raj Anand",
     pic: "img/sp-images/gautam raj.jpeg",
-    designation: "Founder - HubHopper",
+    designation: "Founder & CEO - HubHopper",
     about:
       "He is the Founder & CEO of Hubhopper, India's largest podcast hosting, creation and distribution platform. He has been recognised as a member of the Forbes 30 Under 30 in Asia for media and technology (batch of 2018) and has been nominated on the Economic Times 40 Under 40 list. He was also awarded Entrepreneur of the Year for 2018 by Entrepreneur Magazine.",
     id: "",
