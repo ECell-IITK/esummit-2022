@@ -1355,6 +1355,9 @@ a {
     width: auto;
     margin: 0 20px;
   }
+  .popup-modal .link-box a {
+    font: 12px/27px "raleway-heavy", sans-serif;
+  }
 }
 
 /* transition effect for modal popup
