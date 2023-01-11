@@ -145,22 +145,22 @@
 }
 
 .slider .slide {
-    width: 150px;
+    width: 200px;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(100px);
     }
 
     100% {
-        transform: translateX(calc(-150px*4));
+        transform: translateX(calc(-200px*26));
     }
 }
 
 .slider .slide-track {
-    animation: scroll 10s linear infinite;
-    width: calc(150px*8);
+    animation: scroll 40s linear infinite;
+    width: calc(200px*22);
 }
 
 .quote {

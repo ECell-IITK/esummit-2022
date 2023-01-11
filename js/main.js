@@ -60,6 +60,8 @@ $(".counter").counterUp({
 arrowBtnLeft.addEventListener("click", prevSlide);
 arrowBtnRight.addEventListener("click", nextSlide);
 
+setInterval(nextSlide, 3000);
+
 dotsContainer.addEventListener("click", function (e) {
   // if needed to work only on dots and not on dot container
   if (e.target.classList.contains("dot")) {
@@ -160,7 +162,7 @@ dotsContainer.addEventListener("click", function (e) {
       </div>";
     }, 1000);
 
-    const $ball = document.querySelector(".cursor__ball")
+    const $ball = document.querySelector(".cursor__ball");
     // cursor binder
     document.body.addEventListener("mousemove", (e) => {
       TweenMax.to($ball, 0.4, {
@@ -175,13 +177,13 @@ dotsContainer.addEventListener("click", function (e) {
         TweenMax.to($ball, 0.3, {
           scale: 4,
         });
-        $ball.classList.add("ball_hovered")
+        $ball.classList.add("ball_hovered");
       });
       $hoverables[i].addEventListener("mouseleave", () => {
         TweenMax.to($ball, 0.3, {
           scale: 1,
         });
-        $ball.classList.remove("ball_hovered")
+        $ball.classList.remove("ball_hovered");
       });
     }
   });
@@ -239,27 +241,6 @@ dotsContainer.addEventListener("click", function (e) {
       $(".dull").removeClass("active");
     }
   });
-
-  // window.addEventListener("scroll", () => {
-  //   const sections = document.querySelectorAll("section");
-  //   const scrollY = window.pageYOffset;
-
-  //   sections.forEach((current) => {
-  //     let sectionHeight = current.offsetHeight;
-  //     let sectionTop = current.offsetTop - 50;
-  //     let id = current.getAttribute("id");
-
-  //     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-  //       document
-  //         .querySelector(".navlinks ul li a[href*=" + id + "]")
-  //         .classList.add("active");
-  //     } else {
-  //       document
-  //         .querySelector(".navlinks ul li a[href*=" + id + "]")
-  //         .classList.remove("active");
-  //     }
-  //   });
-  // });
 })(jQuery);
 
 // ScrollReveal({
@@ -278,3 +259,21 @@ dotsContainer.addEventListener("click", function (e) {
 // ScrollReveal().reveal('.comp-card, .ws-card', { delay: 600, origin: 'bottom', interval:100 });
 // ScrollReveal().reveal('.content .info img, .img1 img', { delay: 600, origin: 'right' });
 // ScrollReveal().reveal('.tnc-cont p, .tnc-cont ul', { delay: 600, origin: 'left', interval:200});
+
+// $(document).ready(function () {
+//   setTimeout(
+//     () => (document.querySelector(".notification").style.right = 0),
+//     3000
+//   );
+
+//   setTimeout(
+//     () => (document.querySelector(".notification").style.right = "-500px"),
+//     15000
+//   );
+
+//   document
+//     .querySelector(".notification .cross")
+//     .addEventListener("click", (e) => {
+//       document.querySelector(".notification").style.right = "-500px";
+//     });
+// });

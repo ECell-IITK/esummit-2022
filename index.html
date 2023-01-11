@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/vendor.css" />
     <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/modal.css" />
     <link rel="shortcut icon" href="img/E_Cell_Logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -53,7 +54,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@700&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -65,6 +66,33 @@
   </head>
 
   <body>
+    <div
+      style="
+        background-color: rgb(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      "
+    >
+      <video
+        autoplay
+        muted
+        loop
+        class="video-bg"
+        style="
+          opacity: 0.4;
+          width: auto;
+          height: auto;
+          min-height: 100vw;
+          min-height: 100vh;
+        "
+      >
+        <source src="bg-video/background.webm" />
+      </video>
+    </div>
+
     <div
       style="
         background-color: rgb(0, 0, 0, 0.8);
@@ -83,10 +111,11 @@
         <div class="nav-close-btn"></div>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#Events">EVENTS</a></li>
+        <!-- <li><a href="#Events">EVENTS</a></li> -->
         <li><a href="#speakers">SPEAKERS</a></li>
         <li><a href="#competition">COMPETITIONS</a></li>
         <li><a href="#workshop">WORKSHOPS</a></li>
+        <li><a href="sponsors.html">SPONSORS</a></li>
         <li>
           <a
             href="register.html"
@@ -103,26 +132,20 @@
     </div>
     <nav class="navbar background navback hnavresp">
       <a href="/"
-        ><img src="img/E_Cell_Logo.png" alt="" class="src" style="width: 50px"
+        ><img src="img/E Cell Logo E Summit White.png" alt="" class="src"
       /></a>
       <div class="navlinks navlist vclassresp">
         <ul>
           <div class="nav-close-btn"></div>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#Events">EVENTS</a></li>
-          <li><a href="#speakers">SPEAKERS</a></li>
-          <li><a href="#competition">COMPETITIONS</a></li>
-          <li><a href="#workshop">WORKSHOPS</a></li>
+          <li><a href="#home" class="hoverables">HOME</a></li>
+          <li><a href="#about" class="hoverables">ABOUT</a></li>
+          <!-- <li><a href="#Events" class="hoverables">EVENTS</a></li> -->
+          <li><a href="#speakers" class="hoverables">SPEAKERS</a></li>
+          <li><a href="#competition" class="hoverables">COMPETITIONS</a></li>
+          <li><a href="#workshop" class="hoverables">WORKSHOPS</a></li>
+          <li><a href="sponsors.html" class="hoverables">SPONSORS</a></li>
           <li>
-            <a
-              href="register.html"
-              style="
-                background-color: white;
-                color: #891502;
-                padding: 7px;
-                border-radius: 5px;
-              "
+            <a href="register.html" class="hoverables register-button-nav"
               >Register Now</a
             >
           </li>
@@ -136,10 +159,112 @@
       </div>
     </nav>
 
-    <section id="home">
-      <video autoplay preload muted class="video-bg">
-        <source src="bg-video/landing.mp4" />
-      </video>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; background: black; overflow: visible"
+        id="dialog"
+        class="window"
+      >
+        <a href="#" class="close agree"
+          ><img
+            src="img/close-icon.png"
+            width="35"
+            style="
+              float: right;
+              margin-right: -25px;
+              margin-top: -20px;
+              overflow: visible;
+            "
+        /></a>
+        <div id="san" style="overflow: visible">
+          <button style="background: #ff2929; font-size: 18px; cursor: default">
+            <a target="_blank">LIVE EVENTS</a>
+          </button>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+
+    <!-- <div id="boxes">
+      <div
+        style="
+          top: 50%;
+          left: 50%;
+          display: none;
+          background: black;
+          overflow: visible;
+        "
+        id="dialog"
+        class="window"
+      >
+        <div id="san" style="overflow: visible">
+          <a href="#" class="close agree"
+            ><img
+              src="img/close-icon.png"
+              width="35"
+              style="
+                float: right;
+                margin-right: -25px;
+                margin-top: -20px;
+                overflow: visible;
+              "
+          /></a>
+          <img src="img/E Cell Logo E Summit White.png" width="350" />
+          <h3
+            style="
+              color: white;
+              font-family: 'Roboto';
+              width: 80%;
+              text-align: center;
+              margin: 20px auto;
+            "
+          >
+            Chance to win Exciting Goodies by filling the form below
+          </h3>
+          <button style="background: #ff2929; font-size: 18px">
+            <a href="https://forms.gle/ADy3n3sVjQFUxm1j8" target="_blank"
+              >Fill Form</a
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div> -->
+
+    <section id="home" style="z-index: 100; position: relative">
+      <div
+        style="
+          background-color: rgb(0, 0, 0, 0.6);
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+        "
+      >
+        <video autoplay preload muted class="video-bg">
+          <source src="bg-video/landing.mp4" />
+        </video>
+      </div>
+
       <div class="homepage">
         <div class="home-main">
           <img class="" src="img/e summit logo brown.png" alt="" />
@@ -161,9 +286,9 @@
       </div>
     </section>
     <section id="about">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="common">
         <div class="abo">
           <!-- <div class="gear">
@@ -178,7 +303,7 @@
                         </div>
                     </div> -->
             <div class="heading h1animation">
-              <h1 style="text-align: center">What is E-Summit ?</h1>
+              <h1 style="text-align: center">WHAT IS E-SUMMIT?</h1>
             </div>
             <div class="para p1">
               <p>
@@ -193,7 +318,8 @@
             </div>
             <div class="heading h2animation">
               <h1 style="text-align: center">
-                E-SUMMIT'22: RENAISSANCE & RISE
+                E-SUMMIT'22:
+                <span style="font-size: smaller">RENAISSANCE & RISE</span>
               </h1>
             </div>
             <div class="para p2">
@@ -216,7 +342,7 @@
             </div>
             <div class="abo-row">
               <div class="abo-card card">
-                <h1><span class="counter">30</span>k+</h1>
+                <h1><span class="counter">30</span>K+</h1>
                 <p>Attendees</p>
               </div>
               <div class="abo-card card">
@@ -238,9 +364,9 @@
       <hr class="section-end" />
     </section>
     <section id="Events">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="eve common">
         <div class="eve-heading heading">
           <img src="img/event-hd.png" />
@@ -248,7 +374,11 @@
 
         <div class="Eventcard">
           <div class="eve-card eve-card-ani">
-            <a href="https://ecelliitk.org/expo" target="_blank">
+            <a
+              href="https://ecelliitk.org/expo"
+              target="_blank"
+              class="hoverables"
+            >
               <div class="circle card">
                 <h1 class="colo">STARTUP</h1>
                 <h1>EXPO</h1>
@@ -269,7 +399,11 @@
             </div>
           </div>
           <div class="eve-card eve-card-ani2">
-            <a href="https://ecelliitk.org/upstart" target="_blank">
+            <a
+              href="https://ecelliitk.org/upstart"
+              target="_blank"
+              class="hoverables"
+            >
               <div class="circle card">
                 <h1 class="colo"><span style="color: white">UP</span>START</h1>
                 <p>The Indian Business Model Competition</p>
@@ -296,9 +430,9 @@
 
     <!-- Speakers  -->
     <section id="speakers" style="padding-top: 0">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="sp-heading hm1-heading heading" style="padding-top: 0">
         <img src="img/speaker-hd.png" alt="" />
       </div>
@@ -318,18 +452,18 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Sweta Bajpai</h3>
-                <h4>Vertical Head, India Meta</h4>
+                <h4>Vertical Head - India Meta</h4>
               </div>
             </div>
           </div>
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/vidushi jain.webp" alt="" />
+                <img src="img/sp-images/vidushi jain.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Vidushi Jain</h3>
-                <h4>CoFounder Attrangi</h4>
+                <h4>CoFounder - Attrangi</h4>
               </div>
             </div>
           </div>
@@ -341,7 +475,7 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Ashneer Grover</h3>
-                <h4>Founder BharatPe</h4>
+                <h4>Founder - BharatPe</h4>
               </div>
             </div>
           </div>
@@ -367,7 +501,7 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <!-- <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
                 <img src="img/sp-images/sandeep aggarwal.jpeg" alt="" />
@@ -377,7 +511,7 @@
                 <h4>Founder Droom & ShopClues</h4>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
@@ -385,18 +519,18 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Saurabh Chandra</h3>
-                <h4>Retired Secretary Government of India</h4>
+                <h4>Retired Secretary to Government of India</h4>
               </div>
             </div>
           </div>
           <div class="slide">
             <div class="sp-card card-2">
               <div class="sp-image">
-                <img src="img/sp-images/prakash kumar.jpg" alt="" />
+                <img src="img/sp-images/ved maani.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
-                <h3>Prakash Kumar</h3>
-                <h4>Chief Executive Officer at Wadhwani Institute</h4>
+                <h3>Ved Mani Tiwari</h3>
+                <h4>Chief Executive Officer at NSDC</h4>
               </div>
             </div>
           </div>
@@ -407,7 +541,7 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Nishant Chandra</h3>
-                <h4>Founder Newton School</h4>
+                <h4>Founder - Newton School</h4>
               </div>
             </div>
           </div>
@@ -418,14 +552,14 @@
               </div>
               <div class="sp-speaker-name">
                 <h3>Amit Agarwal</h3>
-                <h4>Founder Nobroker</h4>
+                <h4>Founder - Nobroker</h4>
               </div>
             </div>
           </div>
           <div class="slide">
             <div class="sp-card card-4">
               <div class="sp-image">
-                <img src="img/sp-images/gautam raj anand.webp" alt="" />
+                <img src="img/sp-images/gautam raj anand.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Gautam Raj Anand</h3>
@@ -433,21 +567,21 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <!-- <div class="slide">
             <div class="sp-card card-4">
               <div class="sp-image">
-                <img src="img/sp-images/Ajit balakrishnan.jpg" alt="" />
+                <img src="img/sp-images/dilip asbe.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
-                <h3>Ajit Balakrishnan</h3>
-                <h4>CEO Rediff.com</h4>
+                <h3>Dilip Asbe</h3>
+                <h4>Managing Director & CEO - NPCI</h4>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/kanika tekriwal.webp" alt="" />
+                <img src="img/sp-images/kanika tekriwal.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Kanika Tekriwal</h3>
@@ -491,6 +625,17 @@
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
+                <img src="img/sp-images/prathammittal.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Pratham Mittal</h3>
+                <h4>Founder - Masters' Union</h4>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
                 <img src="img/sp-images/shawrya mehrotra.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
@@ -498,7 +643,7 @@
                 <h4>Founder Metvy</h4>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
@@ -524,7 +669,18 @@
           <div class="slide">
             <div class="sp-card card-6">
               <div class="sp-image">
-                <img src="img/sp-images/dhruvan thaker.webp" alt="" />
+                <img src="img/sp-images/adit palicha.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Aadit Palicha</h3>
+                <h4>Founder & CEO - Zepto</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/dhruvan thaker.jpg" alt="" />
               </div>
               <div class="sp-speaker-name">
                 <h3>Dhruvam Thaker</h3>
@@ -532,7 +688,50 @@
               </div>
             </div>
           </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/jivraj singh.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Jivraj Singh Sachar</h3>
+                <h4>Venture Operations - AngelList India</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/Shutapa-Paul.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Shutapa Paul</h3>
+                <h4>Founder - Dharma Media Consultants</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sp-card card-6">
+              <div class="sp-image">
+                <img src="img/sp-images/lipi goyal.jpg" alt="" />
+              </div>
+              <div class="sp-speaker-name">
+                <h3>Lipi Goyal</h3>
+                <h4>Independent Artist</h4>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <a href="speakers.html">
+          <button class="back-to-top hoverables">
+            View All Speakers
+            <img
+              src="img/newpage.png"
+              style="height: 20px; width: 20px; margin-left: 10px; padding: 0"
+            />
+          </button>
+        </a>
         <hr class="section-end" style="position: relative; top: 50px" />
       </div>
 
@@ -543,9 +742,9 @@
     </section>
 
     <section id="competition">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="Competition common item-wrap">
         <div class="heading">
           <img src="img/comp-hd.png" />
@@ -562,8 +761,9 @@
                 <img src="img/angel logo_Mesa de trabajo 1.png" />
 
                 <p>
-                  Pitching your idea to a group of investors is incredibly
-                  nerve-wracking.You wonder if they’ll like your idea.
+                  You are an Angle Investor in a VC firm, who has $5Mn to invest
+                  in the startups presenting. Think from the perspective of an
+                  investor and learn what they look for in a startup.
                 </p>
 
                 <button class="eve-btn hoverables">Read More</button>
@@ -572,7 +772,7 @@
 
             <a href="#modal-05" class="cl2"
               ><div class="comp-card card">
-                <img src="img/321.png" />
+                <img src="img/pitch.png" />
 
                 <p>
                   The ability to communicate ones thoughts spontaneously is
@@ -589,8 +789,9 @@
                 <img src="img/DECRYPT.png" />
 
                 <p>
-                  Decrypt is the good old case study competition. It is all
-                  about reading the situation and taking decisions
+                  The good old case study competition, Decrypt, is all about
+                  reading the situation, solving problems, and taking decisions,
+                  sometimes obvious and sometimes challenging.
                 </p>
 
                 <button class="eve-btn hoverables">Read More</button>
@@ -599,7 +800,7 @@
 
             <a href="#modal-08" class="cm2">
               <div class="comp-card card">
-                <img src="img/UpstartLogo_White-01.png" />
+                <img src="img/UpstartLogoCampus.png" />
 
                 <p>
                   A classic pitching competition that showcases one's ability to
@@ -611,16 +812,20 @@
               </div>
             </a>
 
-            <div class="comp-card card cm3">
-              <div class="comp-head" style="text-align: center">
-                <h1>Coming</h1>
-                <h1>Soon</h1>
-              </div>
+            <a href="#modal-07"
+              ><div class="comp-card card">
+                <img src="img/hackathon1.png" />
 
-              <p>More Competitions coming soon...</p>
+                <p>
+                  E-Cell IIT Kanpur is inviting registrations on BizThon - IIT
+                  Kanpur for "Unblock the Block"! Choose a track of your choice
+                  from a 4 problem lot and provide a viable solution using
+                  blockchain.
+                </p>
 
-              <!-- <button class="eve-btn hoverables">Read More</button> -->
-            </div>
+                <button class="eve-btn hoverables">Read More</button>
+              </div></a
+            >
           </div>
           <div class="comp-row">
             <a href="#modal-06" class="cr1"
@@ -654,56 +859,6 @@
             </a>
           </div>
         </div>
-
-        <h1
-          style="
-            text-align: center;
-            color: #b49791;
-            font-size: xx-large;
-            margin-top: 30px;
-          "
-        >
-          HACKATHONS
-        </h1>
-
-        <div class="hackathons">
-          <a href="#modal-07"
-            ><div class="comp-card card">
-              <img src="img/hackathon1.png" />
-
-              <p>
-                E-Cell IIT Kanpur is inviting registrations on BizThon - IIT
-                Kanpur for "Unblock the Block"! Choose a track of your choice
-                from a 4 problem lot and provide a viable solution using
-                blockchain.
-              </p>
-
-              <button class="eve-btn hoverables">Read More</button>
-            </div></a
-          >
-
-          <div class="comp-card card cm3">
-            <div class="comp-head" style="text-align: center">
-              <h1>Coming</h1>
-              <h1>Soon</h1>
-            </div>
-
-            <p>More hackathons coming soon...</p>
-
-            <!-- <button class="eve-btn hoverables">Read More</button> -->
-          </div>
-
-          <div class="comp-card card cm3">
-            <div class="comp-head" style="text-align: center">
-              <h1>Coming</h1>
-              <h1>Soon</h1>
-            </div>
-
-            <p>More hackathons coming soon...</p>
-
-            <!-- <button class="eve-btn hoverables">Read More</button> -->
-          </div>
-        </div>
       </div>
       <div id="event-popup-container"></div>
       <hr class="section-end" style="position: relative; top: 50px" />
@@ -712,9 +867,9 @@
     <!-- Workshops -->
 
     <section id="workshop">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div
         class="ws-heading hm-heading"
         style="padding-top: 0; padding-bottom: 0"
@@ -744,11 +899,10 @@
       </div>
       <div class="ws-container item-wrap">
         <div class="ws-card-container">
-          <a href="#workshop-01">
+          <a href="#workshop-02">
             <div class="ws-card card1 item-wrap hoverables">
-              <img src="img/ws-images/Marketing Objective.png" alt="" />
-              <h3>How to secure your first 100 customers?</h3>
-              <p class="plus-icon">+</p>
+              <img src="img/ws-images/User Interface.png" alt="" />
+              <h3>Deep dive into UI/UX</h3>
             </div>
           </a>
           <a href="#workshop-05">
@@ -781,9 +935,9 @@
     </section>
 
     <section class="quotes">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="carousel">
         <button class="btn-arrow btn-arrow-left hoverables"><</button>
         <button class="btn-arrow btn-arrow-right hoverables">></button>
@@ -798,7 +952,6 @@
                   the trade winds in your sails. Explore. Dream. Discover
                 </p>
                 <p>Mark Twain</p>
-                <hr />
               </div>
             </li>
             <li class="slide slide-2">
@@ -827,19 +980,21 @@
         <div class="dots"></div>
       </div>
 
-      <button class="back-to-top hoverables">
-        Back to top
-        <img
-          src="img/Polygon 3.png"
-          style="height: 20px; width: 20px; margin-left: 10px"
-        />
-      </button>
+      <a href="#">
+        <button class="back-to-top hoverables">
+          Back to top
+          <img
+            src="img/Polygon 3.png"
+            style="height: 20px; width: 20px; margin-left: 10px"
+          />
+        </button>
+      </a>
     </section>
 
     <section class="footer" style="padding-bottom: 0">
-      <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
+      <!-- <video autoplay preload muted loop class="video-bg" style="opacity: 0.2">
         <source src="bg-video/background.webm" />
-      </video>
+      </video> -->
       <div class="socials">
         <a href="https://www.facebook.com/ecelliitk/" class="hoverables"
           ><img src="img/icons/facebook.png" class="icon"
@@ -918,7 +1073,7 @@
     <div class="cursor">
       <div class="cursor__ball">
         <svg height="30" width="30">
-          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          <circle cx="15" cy="15" r="10" stroke-width="0"></circle>
         </svg>
       </div>
     </div>
@@ -938,5 +1093,6 @@
     <script src="js/waypoint.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>

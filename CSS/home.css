@@ -6,13 +6,15 @@
   left: 0;
   transition: all 0.6s;
   background-color: transparent;
+  padding: 20px 30px;
+  transition: 0.3s all;
 }
 
 .navbar.sticky {
   box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   backdrop-filter: blur(20px);
-  background: #2B1104;
-  height: calc(2.5rem + 1.8rem);
+  background: black;
+  padding: 10px 20px;
 }
 
 nav {
@@ -25,9 +27,7 @@ nav {
 }
 
 nav img {
-  width: 65px;
-  margin: 0px 20px;
-  margin-left: 35px;
+  width: 150px;
 }
 
 .navlinks {
@@ -38,7 +38,7 @@ nav img {
 .navlinks ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 30px;
+  padding: 8px 20px;
   position: relative;
 }
 
@@ -47,7 +47,12 @@ nav img {
   text-decoration: none;
   font-size: 16px;
   /* font-weight: 200; */
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s all;
+}
+
+.navlinks ul li a:hover {
+  color: #e84242;
 }
 
 /* .navlinks ul li a.active {
@@ -58,7 +63,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: #e84242;
   border-radius: 3px;
   display: block;
   margin: auto;
@@ -87,10 +92,8 @@ body {
 
 .burger {
   display: none;
-  position: absolute;
   cursor: pointer;
-  right: 5%;
-  top: 15px;
+  margin-right: 15px;
 }
 
 .line {
@@ -101,7 +104,7 @@ body {
 }
 
 #home {
-  background-color: rgb(0,0,0,0.6);
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .homepage {
@@ -125,7 +128,7 @@ body {
 
 
 .home-main img {
-  width: 45%;
+  width: 40%;
   max-width: 700px;
   margin-bottom: 20px;
 }

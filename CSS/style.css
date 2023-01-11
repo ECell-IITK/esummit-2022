@@ -39,6 +39,9 @@ li {
 
 .card {
   background: #B49791;
+  background: radial-gradient(100% 100% at 28.98% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 20%);
+  backdrop-filter: blur(20px);
   box-shadow: 0px 4px 24px -1px rgb(0 0 0 / 20%);
   backdrop-filter: blur(20px);
   border-radius: 30px;
@@ -46,6 +49,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .home-main {
@@ -200,7 +204,7 @@ li {
 
 #about {
   color: white;
-  padding: 10px 40px;
+  padding: 10px 100px;
   text-align: left !important;
   position: relative;
   overflow: hidden;
@@ -285,7 +289,8 @@ p {
   width: 12vw;
   height: 12vw;
   border-radius: 50%;
-  background-color: #B49791;
+  color: white;
+  border: 2px solid #E24501;
 }
 
 .heading img,
@@ -305,12 +310,12 @@ p {
 
 .abo-card h1 {
   font-size: 45px;
-  color: black
+  color: white;
 }
 
 .abo-card p {
   font-size: 20px;
-  color: #741919;
+  color: #E24501;
 }
 
 /* Competiton Style  */
@@ -356,12 +361,13 @@ p {
   height: max-content;
   width: 20vw;
   max-width: 350px;
+  min-width: 250px;
   flex-direction: column;
   border: 2px solid #ED4B06;
   transition: 0.2s all;
   margin: 20px 0;
   padding: 30px 20px;
-  background-color: black;
+  background: black;
 }
 
 .comp-card img {
@@ -396,7 +402,7 @@ p {
 .comp-row {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin: 50px 35px;
   overflow-x: visible;
 }
@@ -531,7 +537,7 @@ p {
 }
 
 .hm-desc {
-  padding: 60px 180px 0 180px;
+  padding: 60px 50px 0 50px;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
@@ -606,7 +612,7 @@ a[href="#workshop-05"] .ws-card::before {
   background-image: url('../img/ws-images/marketing.png');
 }
 
-a[href="#workshop-01"] .ws-card::before {
+a[href="#workshop-02"] .ws-card::before {
   background-image: url('../img/ws-images/customers.png');
   background-blend-mode: color-burn;
   background-color: #bb897f;
@@ -706,29 +712,17 @@ a[href="#workshop-01"] .ws-card::before {
 
 
 /* Speaker Styling  */
-
-
-/* Speaker Styling  */
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 @keyframes scroll1 {
   0% {
-    transform: translateX(0);
+    transform: translateX(100px);
   }
 
   100% {
-    transform: translateX(calc(-350px * 10));
+    transform: translateX(calc(-350px * 18));
   }
 }
 
-
 .slider {
-  /* background: white; */
   /* background: #010101; */
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   margin: auto;
@@ -737,7 +731,6 @@ a[href="#workshop-01"] .ws-card::before {
   width: 100%;
   /* height: 450px; */
   text-align: center;
-  overflow: visible;
 }
 
 .slider img {
@@ -745,6 +738,16 @@ a[href="#workshop-01"] .ws-card::before {
   padding: 10px 20px;
   /* height: 100px; */
   /* width: 250px; */
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
 }
 
 .slider::after {
@@ -759,9 +762,9 @@ a[href="#workshop-01"] .ws-card::before {
 }
 
 .slider .slide-track {
-  animation: scroll1 30s linear infinite;
+  animation: scroll1 40s linear infinite;
   display: flex;
-  width: calc(350px*20);
+  width: calc(350px*22);
   animation-iteration-count: infinite;
   overflow-x: visible;
 }
@@ -794,6 +797,23 @@ a[href="#workshop-01"] .ws-card::before {
 #speakers {
   background-color: rgb(0, 0, 0, 0.5);
   position: relative;
+}
+
+#speakers button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.3s all;
+  margin-top: 40px;
+  font-size: large;
+  background: red;
+  color: white
+}
+
+#speakers button:hover {
+  background-color: #e84242;
 }
 
 
@@ -830,6 +850,7 @@ a[href="#workshop-01"] .ws-card::before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 90%;
 }
 
 .sp-speaker-name h4 {
@@ -886,7 +907,7 @@ a[href="#workshop-01"] .ws-card::before {
 }
 
 .hm1-desc {
-  padding: 60px 180px 0 180px;
+  padding: 60px 50px 0 50px;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
@@ -944,13 +965,15 @@ a[href="#workshop-01"] .ws-card::before {
   }
 
   .sp-image img {
-    height: 45vw;
-    width: 45vw;
+    height: 200px;
+    width: 180px;
     border-radius: 125px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .sp-card {
-    width: max-content;
+    width: 200px;
   }
 
   .sp-speaker-name h3 {
@@ -982,7 +1005,7 @@ a[href="#workshop-01"] .ws-card::before {
 .quotes {
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
+  padding: 50px 0;
   align-items: center;
   text-align: center;
   position: relative;
@@ -991,17 +1014,16 @@ a[href="#workshop-01"] .ws-card::before {
 }
 
 .quote {
-  width: 85%;
+  width: 100%;
+  height: max-content;
   padding: 50px;
   border-radius: 10px;
   text-transform: uppercase;
   color: white;
   font-weight: bold;
   font-size: x-large;
-  background: url("../img/quote-bg.png");
-  background-color: rgb(0, 0, 0, 0.7);
-  background-blend-mode: color-burn;
-  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .quote p {
@@ -1060,7 +1082,7 @@ a[href="#workshop-01"] .ws-card::before {
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   border-radius: 20px;
-  border: 1px solid red;
+  border: 2px solid red;
   padding: 20px;
   margin: 50px 0;
   align-content: center;
@@ -1103,7 +1125,8 @@ a[href="#workshop-01"] .ws-card::before {
 .carousel {
   display: flex;
   flex-direction: column;
-  width: 80rem;
+  width: 95%;
+  max-width: 1250px;
   position: relative;
 }
 
@@ -1154,8 +1177,8 @@ a[href="#workshop-01"] .ws-card::before {
 .inner {
   position: relative;
   align-self: center;
-  width: 80rem;
-  height: 28rem;
+  width: 85%;
+  height: 23rem;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -1171,9 +1194,13 @@ a[href="#workshop-01"] .ws-card::before {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 80rem;
+  width: 100%;
   height: 100%;
   transition: all 0.3s;
+  background: url("../img/quote-bg.png");
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: color-burn;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
 }
 
 /* DOTS */
@@ -1699,10 +1726,364 @@ svg #wheel {
 }
 
 circle {
-  fill: #f7f8fa;
-  opacity: 0.6;
+  fill: #656565;
+  opacity: 0.8;
 }
 
-.ball_hovered {
-  mix-blend-mode:overlay;
+/*14. Past Speakers and Sponsors
+-------------------------------------------------------------------------------*/
+
+#speakers,
+#sponsors {
+  padding: 60px 0 0 0;
+}
+
+.slider-wrapper {
+  width: 100%;
+  max-width: 1064px;
+  margin: 40px auto 0 auto;
+  overflow: hidden;
+}
+
+#speaker-slider,
+#sponsor-slider {
+  width: 100%;
+  margin: 0;
+  padding: 0 28px;
+}
+
+.speaker {
+  overflow: hidden;
+  height: 400px;
+}
+
+.sponsor {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.speaker img {
+  width: 200px;
+  height: 200px;
+  position: center;
+  border-radius: 50%;
+}
+
+.sponsor img {
+  width: 200px;
+  height: 100px;
+  position: center;
+  border-radius: 20px;
+  background: white;
+  border: 2px solid #b6b5b4;
+  padding: 20px;
+}
+
+.speaker h3,
+.sponsor h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 0 0 0;
+}
+
+.speaker h4,
+.sponsor h4 {
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: #FF2929;
+}
+
+#speakers .slider-wrapper>div {
+  /* margin-bottom: 100px; */
+}
+
+#sponsors .slider-wrapper>div {
+  /* background: white; */
+  display: flex;
+}
+
+/**sponsors.html**/
+
+#sponsors {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.6);
+  overflow: visible;
+}
+
+.spon-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  overflow: visible;
+}
+
+#sponsors_gallery {
+  padding: 10px 10%;
+}
+
+.sponsor-pic {
+  background: white;
+  max-width: 85%;
+  max-height: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: visible;
+}
+
+.sponsor-pic:hover {
+  opacity: 0.5;
+}
+
+.sponsor-pic-wrapper {
+  width: 100%;
+  height: 80%;
+  min-height: 250px;
+  min-width: 250px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+}
+
+.spon-cat {
+  color: rgb(255, 149, 79);
+  font-size: 18px;
+  font-family: "raleway-heavy", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.spon-cat:hover {
+  visibility: visible;
+}
+
+.navlinks ul li .register-button-nav {
+  background-color: white;
+  color: #891502;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+.navlinks ul li:last-child::after {
+  display: none;
+}
+
+.navlinks ul li .register-button-nav:hover {
+  border-bottom: 2px solid #e84242;
+  background-color: transparent;
+  color: #e84242;
+}
+
+/* On-load modal */
+
+.notification {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: -500px;
+  display: flex;
+  align-items: flex-start;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: white;
+  padding: 20px;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 50;
+  transition: 0.3s all;
+}
+
+.notification .cross {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.notification button {
+  display: inline-block;
+  font: 16px/30px "raleway-heavy", sans-serif;
+  padding: 9px 16px;
+  margin: 0 3px 6px 0;
+  background: #fdc501;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto;
+  text-align: center;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  border-radius: 3px;
+}
+
+/**All speakers***************************************************/
+
+.speaker-pic {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.speaker-name {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.speaker-name h2 {
+  margin: 0 0 0 0;
+  color: white;
+}
+
+.speaker-name h3 {
+  margin: 0 0 0 0;
+  color: #e64e04;
+}
+
+#all-speakers {
+  background-image: url("../images/speakers/argyle.png");
+  background-repeat: repeat;
+  padding: 120px 0;
+}
+
+#all-speakers .section-head {
+  padding-bottom: 60px;
+}
+
+#all-speakers .md-modal .md-content {
+  max-width: 90vw;
+}
+
+#all-speakers-present {
+  background-image: url("../images/speakers/argyle.png");
+  background-repeat: repeat;
+  padding: 50px 0;
+}
+
+#all-speakers-present .section-head {
+  padding-bottom: 60px;
+}
+
+#all-speakers-present .md-modal .md-content {
+  max-width: 90vw;
+}
+
+.designation {
+  font-size: medium;
+}
+
+.member {
+  padding: 0 30px !important;
+}
+
+/* On-load modal */
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  background-color: #26262c;
+  display: none;
+}
+
+#boxes .window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 850px;
+  display: none;
+  z-index: 100001;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#boxes button {
+  display: inline-block;
+  font: 16px/30px "raleway-heavy", sans-serif;
+  padding: 9px 16px;
+  margin: 0 3px 6px 0;
+  background: #fdc501;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto;
+  text-align: center;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#boxes button:hover {}
+
+#boxes #dialog {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+.agree:hover {
+  background-color: #D1D1D1;
+}
+
+.popupoption:hover {
+  background-color: #D1D1D1;
+  color: green;
+}
+
+.popupoption2:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 864px) {
+  #boxes #dialog {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #boxes #dialog {
+    width: 250px;
+  }
+}
+
+.event h1 {
+  color: white;
+}
+
+#san {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
