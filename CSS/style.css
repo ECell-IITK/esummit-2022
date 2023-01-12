@@ -57,7 +57,7 @@ li {
 }
 
 .hp-content h1 {
-  margin: 20px 0;
+  margin: -10px 0;
 }
 
 /* Events CSS  */
@@ -1652,8 +1652,8 @@ svg #wheel {
   width: 40%;
   max-width: 500px;
   min-width: 350px;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   align-items: center;
   font-family: 'roboto';
