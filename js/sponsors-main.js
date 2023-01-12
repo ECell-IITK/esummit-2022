@@ -34,7 +34,7 @@ spons.push(
     name: "Lohia Corp Ltd",
     pic: "img/sponsors/lohia.png",
     cat: "Startup Expo Gold Sponsor",
-    url: "https://www.deutschebank.co.in/",
+    url: "https://www.lohiattrc.com/",
     id: "",
   },
   {
