@@ -113,7 +113,7 @@ body {
 }
 
 .hp-content h1 {
-  margin-bottom: 30px;
+  margin-bottom: -10px;
   font-size: xx-large;
 }
 
@@ -142,7 +142,7 @@ body {
 .hp-content {
   text-align: center;
   color: white;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .hp-content p {
@@ -176,4 +176,10 @@ body {
   background-color: #542327;
   color: white;
   border: 2px solid #fdf9fa;
+}
+
+@media(min-width:900px){
+  .main-image{
+    margin-top: 3%;
+  }
 }
