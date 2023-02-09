@@ -65,7 +65,7 @@ spons.push(
     url: "https://www.onlinesbi.sbi/",
     id: "",
   },
-  
+
   {
     name: "StockGro",
     pic: "img/sponsors/stockgro.png",
@@ -92,6 +92,20 @@ spons.push(
     pic: "img/sponsors/nihkan.png",
     cat: "Corporate Gifting Partner",
     url: "https://nihkan.in/",
+    id: "",
+  },
+  {
+    name: "Clear Water",
+    pic: "img/sponsors/clear.webp",
+    cat: "Hydration Partner",
+    url: "https://www.clearpani.com/",
+    id: "",
+  },
+  {
+    name: "Auteur Pens",
+    pic: "img/sponsors/auteur.jpg",
+    cat: "Stationary Partner",
+    url: "https://auteurpens.com/",
     id: "",
   },
   {
@@ -268,7 +282,7 @@ spons.push(
     cat: "Official Gifting Partner",
     url: "",
     id: "",
-  },
+  }
 );
 
 //Assign id to each element of the speaker sponsay=> s0, s1, s2 etc
